@@ -1,162 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Whatsapp Group Link</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#e91e63"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    .w3-round2{
-        border-radius: 30px;
+  <title>Vikas Lazarus</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c71c55" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .w3-round2 {
+      border-radius: 30px;
     }
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+  </style>
+
+<style>
+ 
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height:50px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 </style>
+
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-pink w3-left-align w3-large" style="border-bottom: 1px solid #c71c55; padding: 12px 0px;">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-pink" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="" class="w3-bar-item w3-button w3-pink w3-hover-none" style="padding:8px 12px;">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-pink w3-left-align w3-large" style="border-bottom: 1px solid #c71c55; padding: 12px 0px;">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-pink"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="" class="w3-bar-item w3-button w3-pink w3-hover-none" style="padding:8px 12px;">
         <div class="w3-large">
 
-          <div class="w3-col w3-white" style="border-radius: 15px; width: 36px; height: 36px;">
-            <svg style="margin-top: 5.5px;" fill="#e91e63" width="22px" height="22px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
-                <path d="M128.00049,20A108.03119,108.03119,0,0,0,32.51807,178.50783l-8.09961,28.34961a19.99944,19.99944,0,0,0,24.72412,24.72461l28.35107-8.09961A108.00755,108.00755,0,1,0,128.00049,20Zm0,192A83.8647,83.8647,0,0,1,85.1377,200.25686a11.9994,11.9994,0,0,0-9.43165-1.22461l-26.23339,7.49512,7.49463-26.2334a11.99924,11.99924,0,0,0-1.22413-9.42969A84.01088,84.01088,0,1,1,128.00049,212ZM178.29,131.3799l-12.35059-7.41015a19.91277,19.91277,0,0,0-19.23486-.73828L141.749,125.71a24.131,24.131,0,0,1-11.458-11.459l2.47851-4.957a19.90682,19.90682,0,0,0-.73926-19.2334L124.61963,77.709A20.10266,20.10266,0,0,0,107.4707,68H104a35.93121,35.93121,0,0,0-35.99805,35.459A83.99965,83.99965,0,0,0,151.99219,188c.18261,0,.36572-.001.54785-.00195A35.93108,35.93108,0,0,0,188,152v-3.4707A20.09843,20.09843,0,0,0,178.29,131.3799ZM164,152a11.8734,11.8734,0,0,1-11.61084,11.99805c-.13135.001-.26025.00195-.3916.001A59.99844,59.99844,0,0,1,92.001,103.61135,11.87593,11.87593,0,0,1,104,92h1.20605l5.11475,8.52539-3.793,7.583a11.999,11.999,0,0,0-.84619,8.51953,48.15144,48.15144,0,0,0,33.69043,33.68945,12.01033,12.01033,0,0,0,8.51709-.8457l7.58545-3.793L164,150.79494Z"/>
-              </svg>
-          </div>
-
-          <div class="w3-rest" style=" font-size: 18px; padding:8px 6px;padding-top:3px;"> <b>Whatsapp Group Links</b></div>
+          <img src="logo.png" width="200px">
 
         </div>
       </a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Link 4</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large" style="border-radius: 0px 0px 15px 15px;">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+    </div>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  <!-- Header -->
+  <header class="w3-container w3-pink w3-center" style="padding:128px 0px">
+    <h1 class="w3-margin w3-xxlarge"><b>Whatsapp Group Links New 2025</b></h1>
+    <p class="w3-large">Explore Whatsapp Group links With Us.</p>
+    <button class="w3-button w3-black w3-padding-large w3-small w3-margin-top w3-round2"><b>Submit Your
+        Group</b></button>
+  </header>
+
+
+   <!-- Swiper -->
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+
   </div>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-pink w3-center" style="padding:128px 0px">
-  <h1 class="w3-margin w3-xxlarge"><b>Whatsapp Group Links New 2025</b></h1>
-  <p class="w3-large">Explore Whatsapp Group links With Us.</p>
-  <button class="w3-button w3-black w3-padding-large w3-small w3-margin-top w3-round2"><b>Submit Your Group</b></button>
-</header>
 
 
-
-<div class="w3-container w3-dark-gray w3-center" style="background-image: url(images/volvo\ bus\ 2\ bg.jpg); background-repeat: no-repeat;
+  <div class="w3-container w3-pink w3-center" style="background-image: url(https://img.freepik.com/free-photo/young-european-woman-jeans-plaid-jacket-poses-portrait-beige-wall_197531-14213.jpg?t=st=1736406586~exp=1736410186~hmac=9237e2864d68da7d370825f556cba81c1ffb07624f7085a660deee7f095469d3&w=360); background-repeat: no-repeat;
 background-size: cover; background-position: center;">
-  <div class="w3-half w3-center w3-padding">
-  
-  
-  </div>
-  <div class="w3-half">
-  <div class="w3-padding w3-padding-64">
-      <h3 class="w3-xlarge w3-left-align"><b>We Also <br>Provide <r>Volvo Bus</r> <br>Booking Services</b></h3>
-      <div class=" w3-left-align">
-        
-        <a href="tel:+918219471645"><button style="margin-top: 20px;" class="w3-button w3-pink w3-large w3-text-white"><b>Call Now</b></button></a>
+    <div class="w3-half w3-center w3-padding">
+
+
+    </div>
+    <div class="w3-half">
+      <div class="w3-padding w3-padding-64">
+        <h3 class="w3-xlarge w3-left-align"><b>Explore <br>Indian<br>Whatsapp Group Links</b></h3>
+        <div class=" w3-left-align">
+
+          <button style="margin-top: 20px;" class="w3-round2 w3-button w3-pink w3-large w3-text-white"><b>Explore
+              Groups</b></button>
+        </div>
       </div>
-    </div>  
-  
-  </div>
+
+    </div>
 
   </div>
 
   <div class="w3-container w3-text-white w3-pink w3-padding-16">
     <div class="w3-container w3-content w3-center w3-padding-16">
-        <p class="w3-margin">Hurry Limited Time Offer</p>
-        <p class="w3-xlarge">Get 20% Off On Booking Your First Cab</p>
-        <p><b>Senatized before You Eyes, Comfortable And new Well Maintained Cabs with Humble and Experianced Drivers.</b></p>
-        <button onclick="openForm()" class="w3-button w3-white"><b>Book Now</b></button>
-        <a href="tel:+918219471645"><button class="w3-button w3-white"><b>Call Now</b></button></a>
-    </div>
-    </div>
-
-
-
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      <p class="w3-margin">Hurry Limited Time Offer</p>
+      <p class="w3-xlarge">Get 20% Off On Booking Your First Cab</p>
+      <p><b>Senatized before You Eyes, Comfortable And new Well Maintained Cabs with Humble and Experianced Drivers.</b>
+      </p>
+      <button onclick="openForm()" class="w3-button w3-white"><b>Book Now</b></button>
+      <a href="tel:+918219471645"><button class="w3-button w3-white"><b>Call Now</b></button></a>
     </div>
   </div>
-</div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
 
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Lorem Ipsum</h1>
+        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="w3-container w3-dark-gray w3-center w3-padding-64">
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+      </div>
+
+      <div class="w3-twothird">
+        <h1>Lorem Ipsum</h1>
+        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-pink w3-center w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
+  </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-pink">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-pink">
+    <div class="w3-xlarge w3-padding-32">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 </body>
+
 </html>

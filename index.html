@@ -118,12 +118,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   
           </div>
 
-        <table class="w3-table w3-striped">
-            <tr>
-              <th>Whatsapp Group Categories</th>
-              
-            </tr>
-            
+          <button onclick="myFunction2('Demo2')" class="w3-button w3-block w3-left-align w3-margin-bottom w3-hover-light-gray w3-light-grey" style=" border-radius: 10px;"><strong>Table Of Contents : <i class="w3-right fa fa-angle-down"></i></strong></button>
+<div id="Demo2" class="w3-row w3-hide w3-display-container w3-light-grey" style=" border-radius: 10px;">
+  
+  <div class="w3-display-topright w3-light-grey" style="margin-top:-50px ; margin-right: 15px;"><i class="fa fa-angle-up"></i></div>
+    <table class="w3-table w3-margin-top w3-margin-bottom">
+                       
             <tr>
                 <td>Indian WhatsApp Group</td>
                 </tr>
@@ -179,6 +179,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                 <td>Rules for WhatsApp Groups</td>
                 </tr>
           </table>
+</div>
+
+</div>
+<script>
+function myFunction2(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+        
 
         
 

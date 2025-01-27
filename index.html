@@ -8,6 +8,28 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    var myObject= {"customers":[
+    {"CustomerName" : "Alfreds Futterkiste","City" : "Berlin","Country" : "Germany"},
+    {"CustomerName" : "Berglunds snabbköp","City" : "Luleå","Country" : "Sweden"},
+    {"CustomerName" : "Centro comercial Moctezuma","City" : "México D.F.","Country" : "Mexico"},
+    {"CustomerName" : "Ernst Handel","City" : "Graz","Country" : "Austria"},
+    {"CustomerName" : "FISSA Fabrica Inter. Salchichas S.A.","City" : "Madrid","Country" : "Spain"},
+    {"CustomerName" : "Galería del gastrónomo","City" : "Barcelona","Country" : "Spain"},
+    {"CustomerName" : "Island Trading","City" : "Cowes","Country" : "UK"},
+    {"CustomerName" : "Königlich Essen","City" : "Brandenburg","Country" : "Germany"},
+    {"CustomerName" : "Laughing Bacchus Wine Cellars","City" : "Vancouver","Country" : "Canada"},
+    {"CustomerName" : "Magazzini Alimentari Riuniti","City" : "Bergamo","Country" : "Italy"},
+    {"CustomerName" : "North/South","City" : "London","Country" : "UK"},
+    {"CustomerName" : "Paris spécialités","City" : "Paris","Country" : "France"},
+    {"CustomerName" : "Rattlesnake Canyon Grocery","City" : "Albuquerque","Country" : "USA"},
+    {"CustomerName" : "Simons bistro","City" : "København","Country" : "Denmark"},
+    {"CustomerName" : "The Big Cheese","City" : "Portland","Country" : "USA"},
+    {"CustomerName" : "Vaffeljernet","City" : "Århus","Country" : "Denmark"},
+    {"CustomerName" : "Wolski Zajazd","City" : "Warszawa","Country" : "Poland"}
+    ]};
+    </script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -119,6 +141,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
            
   
           </div>
+
+
+          <table class="w3-table w3-striped" id="Table01">
+            <tr>
+              <th>Customer</th>
+              <th>City</th>
+              <th>Country</th>
+            </tr>
+            <tr w3-repeat="customers">
+              <td>{{CustomerName}}</td>
+              <td>{{City}}</td>
+              <td>{{Country}}</td>
+            </tr>
+          </table>
+
 
           <button onclick="myFunction2('Demo2')" class="w3-button w3-block w3-left-align w3-margin-bottom w3-hover-light-gray w3-light-grey" style=" border-radius: 10px;"><strong>Table Of Contents : <i class="w3-right fa fa-angle-down"></i></strong></button>
 <div id="Demo2" class="w3-row w3-hide w3-display-container w3-light-grey" style=" border-radius: 10px;">
@@ -368,5 +405,8 @@ function myFunction() {
 }
 </script>
 
+<script>
+    w3.displayObject("Table01", myObject);
+    </script>
 </body>
 </html>

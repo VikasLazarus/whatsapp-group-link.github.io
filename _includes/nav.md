@@ -8,7 +8,7 @@
 </svg>
     </button>
     <a href="{{ site.url }}" class="w3-bar-item w3-button w3-padding-larg"><b class="w3-text-dark-gray">
-        <img src="{{ site.url }}/images/logo.png" alt="WhatsApp Group Link" height="34px">
+        <img src="{{ site.url }}/images/logo.png" alt="Logo" height="34px">
         Whatsapp Group Link</b></a>
     
    

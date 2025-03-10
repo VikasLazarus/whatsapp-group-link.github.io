@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+    .w3-round2{
+      border-radius:10px;
+    }
     .br10 {
         border-radius :6px;
         padding:3px 12px ;

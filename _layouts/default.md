@@ -40,6 +40,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-rnd{
     border-radius: 30px;
 }
+img {
+  border-radius:10px;
+}
 </style>
 </head>
 <body>
@@ -78,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <div class="w3-display-bottomright w3-green" style="background: url(images/tex.png); border-radius: 50px 50px 0px 0px; margin-right: 60px; height: 160px; width: 400px; ">
       </div>
       <div class="w3-section w3-display-middle">
-          <img class="w3-animate-zoom" alt="mount header image" src="images/whatsapp-group-link.png" height="300px">
+          <img class="w3-animate-zoom" alt="{{ page.title }}" src="{{ site.url }}/images/whatsapp-group-link.png" height="300px">
           
         </div>
      
@@ -107,7 +110,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
             <p class="w3-text-gray">
               Join Our Whatsapp Group Links for easy and best way to connect yoursel with comunity with same intrests. Joinin groups are easy and less time taking process. You can find the group to join easily acording to your need and requirment.
-              <span id="dots">...</span>
+              
             </p><div class="w3-text-gray" id="more">We offers best solution for joinning new Whatsapp groups fro everyone.All the groups are available to public and anyone can join tham acording to intrest based requirments.<p></p>
   
             </div>
@@ -254,7 +257,14 @@ function myFunction2(id) {
 
         <div class="w3-row w3-margin-bottom">
             <h2 class="w3-xlarge">Indian WhatsApp Group Links To Join</h2>
-            <p>An Indian WhatsApp group link is your gateway to joining vibrant communities tailored to your interests, whether it’s business, education, entertainment, or lifestyle. These links allow users to instantly connect with like-minded individuals across India, fostering collaboration, knowledge sharing, and networking. With the rise of digital communication, Indian WhatsApp groups have become a popular platform for staying updated on trends, discussing topics, and building meaningful connections. To optimize for SEO, focus on keywords like Indian WhatsApp group link, join free WhatsApp groups in India, and active WhatsApp group invites. Whether you’re looking for professional networks, hobby-based groups, or regional communities, Indian WhatsApp group links offer a convenient and efficient way to engage with others. Always ensure you join groups that align with your interests and follow group rules for a positive experience.</p>
+            <p>An Indian WhatsApp group link is your gateway to joining vibrant communities tailored to your interests, whether it’s business, education, entertainment, or lifestyle. These links allow users to instantly connect with like-minded individuals across India, fostering collaboration, knowledge sharing, and networking.
+            </p>
+
+<img src="{{ site.url }}/images/indian-whatsapp-group-link.jpg" alt="Indian {{ page.title}}" width="100%">
+
+            <p> With the rise of digital communication, Indian WhatsApp groups have become a popular platform for staying updated on trends, discussing topics, and building meaningful connections. Indian WhatsApp group link, join free WhatsApp groups in India, and active WhatsApp group invites.
+            </p>
+             <p>Whether you’re looking for professional networks, hobby-based groups, or regional communities, Indian WhatsApp group links offer a convenient and efficient way to engage with others. Always ensure you join groups that align with your interests and follow group rules for a positive experience.</p>
           
             <table class="w3-table w3-striped">
         
@@ -321,7 +331,12 @@ function myFunction2(id) {
 
          
           <h2 class="w3-xlarge">Food WhatsApp Group links</h2>
-          <p>Looking for a food WhatsApp group link to join a community of passionate food lovers? These groups are the perfect place to share delicious recipes, cooking tips, and restaurant recommendations with fellow foodies. Whether you’re a home chef, a street food enthusiast, or someone who loves exploring new cuisines, food WhatsApp groups bring people together to discuss everything from traditional dishes to trending food hacks. By joining these groups, you can exchange ideas, discover hidden food gems, and even participate in fun food challenges. To make your search easier, look for keywords like food WhatsApp group link, join foodie communities, or recipe sharing groups. Dive into the world of flavors and connect with others who share your love for food!</p>
+          <p>Looking for a food WhatsApp group link to join a community of passionate food lovers? These groups are the perfect place to share delicious recipes, cooking tips, and restaurant recommendations with fellow foodies.
+          </p>
+          <img src="{{ site.url }}/images/food-whatsapp-group-links.jpg" alt="Food {{ page.title}}" width="100%">
+          <p> Whether you’re a home chef, a street food enthusiast, or someone who loves exploring new cuisines, food WhatsApp groups bring people together to discuss everything from traditional dishes to trending food hacks. By joining these groups, you can exchange ideas, discover hidden food gems, and even participate in fun food challenges.</p>
+          
+          <p>To make your search easier, look for keywords like food WhatsApp group link, join foodie communities, or recipe sharing groups. Dive into the world of flavors and connect with others who share your love for food!</p>
           <table class="w3-table w3-striped">
 
          

@@ -5,5 +5,5 @@
 <!-- Footer -->
 <footer class="w3-row w3-center w3-green w3-tiny" style="background:url(images/tex.png); ">  
   
- <p>Copyright © <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Whatsappgrouplink.in</a> - All Rights Reserved. This website is not affiliated with WhatsApp. </p>
+ <p>Copyright © <a href="{{ site.url }}" target="_blank">Whatsappgrouplink.in</a> - All Rights Reserved. This website is not affiliated with WhatsApp. </p>
 </footer>

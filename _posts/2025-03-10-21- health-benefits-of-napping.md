@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "21 Health Benefits of Napping: Improve Your Well-being with Strategic Rest5"
+title: "21 Health Benefits of Napping: Improve Your Well-being with Strategic Rest"
 discription: "21 Health Benefits of Napping: Improve Your Well-being with Strategic Rest  One research found that participants who napped for 20 minutes scored sign"
 permalink: "21-health-benefits-of-napping.html"
 category: "Posts"

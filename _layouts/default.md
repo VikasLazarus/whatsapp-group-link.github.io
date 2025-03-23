@@ -25,8 +25,8 @@
 
 <style>
     .br10 {
-        border-radius :6px;
-        padding:6px 18px;
+        border-radius :15px;
+        padding:6px 12px;
         margin:3px;
     }
     a{
@@ -99,7 +99,7 @@ img {
 
   
 <!-- First Grid -->
-<div class="w3-container w3-content">
+<div class="w3-container w3-row-padding w3-content" style="padding:6px; margin:0px;">
   <div class="w3-twothird">
     <div class="w3-row w3-margin-top">
       <h2 class="w3-xlarge">Whatsapp Group Link In 2025</h2>
@@ -426,12 +426,36 @@ function myFunction2(id) {
 </div>
 
   <div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 15px;">
-{% for post in site.posts %}
-<a class="w3-tag w3-green br10" style=" border-radius: 15px;" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">
-      {{ post.tag }}
-    </a>
-    {% endfor %}
+  <h3 class="w3-large">Whatsapp Group Links :</h3>
+  <hr style="border:1px solid #ffffff; margin:8px 0px;">
+ {% for post in site.categories.Group-Links %}
+    {% if post.url %}
+        <a class="w3-tag w3-white br10" href="{{ post.url }}">{{ post.title }}</a></li>
+    <hr style="border:0px #ffffff; margin:8px 0px;">
+    {% endif %}
+  {% endfor %}
+
   </div>
+
+<div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 15px;">
+  <h3 class="w3-large">Posts :</h3>
+  <hr style="border:1px solid #ffffff; margin:8px 0px;">
+ {% for post in site.categories.Posts %}
+    {% if post.url %}
+        <a class="w3-tag w3-white br10" href="{{ post.url }}">{{ post.title }}</a></li>
+    <hr style="border:0px #ffffff; margin:8px 0px;">
+    {% endif %}
+  {% endfor %}
+
+  </div>
+
+
+
+  <div class="w3-row w3-margin-top w3-border w3-display-container" style="padding:12px; border-radius: 15px; height:300px;">
+ <div class="w3-display-middle"> Ads Here</div>
+
+  </div>
+
 </div>
 </div>
 </div>

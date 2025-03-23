@@ -3,7 +3,7 @@ layout: post
 title: "Share Market Whatsapp Group Links"
 discription: Know more about Whatsappgrouplink.in
 permalink: "share-market-whatsapp-group-link.html"
-tag: "Share Market"
+category: "Group-Links"
 ---
 
 <h1>Share Market Whatsapp Group Links</h1>

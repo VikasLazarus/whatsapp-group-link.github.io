@@ -30,7 +30,7 @@
       border-radius:10px;
     }
     .br10 {
-        border-radius :6px;
+        border-radius :15px;
         padding:6px 18px;
         margin:3px;
     }
@@ -79,22 +79,46 @@
     </div>
     </div>
 
-  <div class="w3-third w3-padding">
+  <div class="w3-third space w3-padding">
 
   <div class="w3-row" style="margin-top: 8px;">
   <h2 class="w3-xlarge w3-margin-top">Related Links</h2>
 </div>
 
   <div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 15px;">
-{% for post in site.posts %}
-<a class="w3-tag w3-green br10" style=" border-radius: 15px;" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">
-      {{ post.tag }}
-    </a>
-    {% endfor %}
-  </div>
-</div>
+  <h3 class="w3-large">Whatsapp Group Links :</h3>
+  <hr style="border:1px solid #ffffff; margin:8px 0px;">
+ {% for post in site.categories.Group-Links %}
+    {% if post.url %}
+        <a class="w3-tag w3-white br10" href="{{ post.url }}">{{ post.title }}</a></li>
+    <hr style="border:0px #ffffff; margin:8px 0px;">
+    {% endif %}
+  {% endfor %}
 
-    </div>
+  </div>
+
+<div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 15px;">
+  <h3 class="w3-large">Posts :</h3>
+  <hr style="border:1px solid #ffffff; margin:8px 0px;">
+ {% for post in site.categories.Posts %}
+    {% if post.url %}
+        <a class="w3-tag w3-white br10" href="{{ post.url }}">{{ post.title }}</a></li>
+    <hr style="border:0px #ffffff; margin:8px 0px;">
+    {% endif %}
+  {% endfor %}
+
+  </div>
+
+
+
+  <div class="w3-row w3-margin-top w3-border w3-display-container" style="padding:12px; border-radius: 15px; height:300px;">
+ <div class="w3-display-middle"> Ads Here</div>
+
+  </div>
+
+</div>
+</div>
+</div>
 
    {% include footer.md %}
 

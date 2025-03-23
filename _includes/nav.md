@@ -14,24 +14,39 @@
    
       <div class="w3-dropdown-hover w3-bar-item w3-hide-small" style="margin-top:3px;">
         <button class="w3-button w3-small">Explore Groups</button>
-        <div class="w3-dropdown-content w3-bar-block w3-light-grey w3-padding" style="border-radius: 15px;">
+        <div class="w3-dropdown-content w3-bar-block w3-white w3-border w3-border-light-gray w3-padding" style="border-radius: 15px;">
          <div class="w3-row">
-         {% for post in site.posts %}
- 
-        <a class="w3-small" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">{{ post.title }}</a>
- <br>
-    {% endfor %}
+        {% for post in site.categories.Group-Links %}
+    {% if post.url %}
+        <a class="w3-small" href="{{ post.url }}">{{ post.title }}</a></li>
+    <hr style="margin:0px; margin:3px 0px;">
+    {% endif %}
+  {% endfor %}
         </div>
          
         
         </div>
       </div>
-  
+   <div class="w3-dropdown-hover w3-bar-item w3-hide-small" style="margin-top:3px;">
+        <button class="w3-button w3-small">Posts</button>
+        <div class="w3-dropdown-content w3-bar-block w3-white w3-border w3-border-light-gray w3-padding" style="border-radius: 15px;">
+         <div class="w3-row">
+        {% for post in site.categories.Posts %}
+    {% if post.url %}
+        <a class="w3-small" href="{{ post.url }}">{{ post.title }}</a></li>
+    <hr>
+    {% endif %}
+  {% endfor %}
+        </div>
+         
+        
+        </div>
+      </div>
     
     <a href="{{ site.url }}/about-us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-small" style="margin-top:6px;">About Us</a>
     <a href="{{ site.url }}/contact-us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-small" style="margin-top:6px;">Contact Us</a>
-    <a href="{{ site.url }}/privacy-policy.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-small" style="margin-top:6px;">Privacy Policy</a>
-    <a href="{{ site.url }}/disclaimer.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-small" style="margin-top:6px;">Disclaimer</a>
+   
+    
   <a href="{{ site.url }}/submit.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-small" style="margin-top:6px;">Submit Group</a>
   </div>
 
@@ -41,21 +56,34 @@
 
  
 
-<button onclick="myFunction2('menu3')" class="w3-green w3-bar-item w3-button w3-padding-large w3-left-align">Explore Groups</button>
+<button onclick="myFunction2('menu3')" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large w3-left-align">Explore Groups</button>
 <div id="menu3" class="w3-container w3-white w3-hide">
           
-     
-          {% for post in site.posts %}
- 
-        <a class="w3-bar-item" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">{{ post.title }}</a>
- 
-    {% endfor %}
+     {% for post in site.categories.Group-Links %}
+    {% if post.url %}
+        <a class="w3-large w3-row" style="padding:3px 18px;" href="{{ post.url }}">{{ post.title }}</a>
+        
+    {% endif %}
+  {% endfor %}
+         
 </div>
 
-    <a href="{{ site.url }}/about-us.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
-    <a href="{{ site.url }}/contact-us.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
-    <a href="{{ site.url }}/privacy-policy.html" class="w3-bar-item w3-button w3-padding-large">Privacy Policy</a>
-    <a href="{{ site.url }}/disclaimer.html" class="w3-bar-item w3-button w3-padding-large">Disclaimer</a>
-     <a href="{{ site.url }}/submit.html" class="w3-bar-item w3-button w3-padding-large">Submit Group</a>
+<button onclick="myFunction2('menu4')" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large w3-left-align">Explore Posts</button>
+<div id="menu4" class="w3-container w3-white w3-hide">
+          
+     {% for post in site.categories.Posts %}
+    {% if post.url %}
+        <a class="w3-large w3-row" style="padding:3px 18px;" href="{{ post.url }}">{{ post.title }}</a>
+        
+    {% endif %}
+  {% endfor %}
+         
+</div>
+
+    <a href="{{ site.url }}/about-us.html" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large">About Us</a>
+    <a href="{{ site.url }}/contact-us.html" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large">Contact Us</a>
+    <a href="{{ site.url }}/privacy-policy.html" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large">Privacy Policy</a>
+    <a href="{{ site.url }}/disclaimer.html" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large">Disclaimer</a>
+     <a href="{{ site.url }}/submit.html" class="w3-border-top w3-border-white w3-bar-item w3-button w3-padding-large">Submit Group</a>
   </div>
 </div>

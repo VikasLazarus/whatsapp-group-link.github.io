@@ -99,7 +99,7 @@ img {
 
   
 <!-- First Grid -->
-<div class="w3-container w3-row-padding w3-content" style="padding:6px; margin:0px;">
+<div class="w3-row w3-row-padding w3-content" style="padding:6px;">
   <div class="w3-twothird">
     <div class="w3-row w3-margin-top">
       <h2 class="w3-xlarge">Whatsapp Group Link In 2025</h2>

@@ -10,6 +10,10 @@
     <meta name="author" content="Whatsapp Group Link">
     <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="{{ site.url }}/images/logo.png">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1638799423963498"
+     crossorigin="anonymous"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH3VZ65152"></script>
 <script>

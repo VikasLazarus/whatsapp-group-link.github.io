@@ -15,7 +15,7 @@ date1 : 23-03-2025
 <p>Firstly, Hi, friends today I'm going toy tell you <strong>earn 2000 rs per day without
                         investment</strong> and how to earn money online? All the methods that I'm going
                     to tell you in this article are online methods of earning money without investment. You can call
-                    them business ideas earn 2000 per day.</p><br /><br /><p><br /></p>
+                    them business ideas earn 2000 per day.</p>
               
               <p>These methods are best to earn money online and can be used in India.</p>
               <p> 
@@ -23,7 +23,7 @@ date1 : 23-03-2025
 In this article we have solved all question written below about make money online
               </p>
 <p>Above all, method can<strong> earn 2000 rs per day without investment work from
-                        home</strong> for<br />you. These can earn extra money for you.</p>
+                        home</strong> for you. These can earn extra money for you.</p>
                 <p>Most importantly, These methods are best to earn money online and can be used in India. Making money
                     online is easy if you know how to make it. Don't worry after reading this article you will find
                     yourself able to make money by working online.</p>
@@ -53,7 +53,7 @@ In this article we have solved all question written below about make money onlin
                 </p>
                 <h2 class="wp-block-heading">Earn 2000 rs per day without investment by Blogging</h2>
                 <div>img</div>
-                <div><br /></div>
+                <div> </div>
                 <div>
                     <p>The first method that is absolutely easy and generates a good amount of online earning for you is
                         blogging. Blogging is the best way to earn online money.</p>
@@ -136,9 +136,9 @@ In this article we have solved all question written below about make money onlin
                         affiliate marketing.</p>
 
                     <p>Make Money With Amazon affiliate</p>
-                    <p><br /></p>
+                    <p> </p>
                     <p>img</p>
-                    <p><br /></p>
+                    <p> </p>
                     <p>Amazon is the biggest online store in the world. Amazon offers great deals and services for
                         online buyers. In addition You can start earning with amazon by promoting their products on your
                         site or blog.</p>
@@ -189,7 +189,7 @@ In this article we have solved all question written below about make money onlin
                     <h2 class="wp-block-heading">Writing work</h2>
                 </div>
                 <div>img</div>
-                <div><br /></div>
+                <div> </div>
                 <div>
                     <p>Yet, as I have noted, There are so many good writers who are earning a good amount of money by
                         using their writing skills. so many companies have a huge demand for good writers. if you have

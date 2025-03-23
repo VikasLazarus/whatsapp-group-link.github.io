@@ -31,7 +31,7 @@
     }
     .br10 {
         border-radius :6px;
-        padding:3px 12px ;
+        padding:6px 18px;
         margin:3px;
     }
     a{
@@ -85,9 +85,9 @@
   <h2 class="w3-xlarge w3-margin-top">Related Links</h2>
 </div>
 
-  <div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 10px;">
+  <div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 15px;">
 {% for post in site.posts %}
-<a class="w3-tag w3-green br10" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">
+<a class="w3-tag w3-green br10" style=" border-radius: 15px;" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">
       {{ post.tag }}
     </a>
     {% endfor %}

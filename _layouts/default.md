@@ -26,7 +26,7 @@
 <style>
     .br10 {
         border-radius :6px;
-        padding:3px 12px ;
+        padding:6px 18px;
         margin:3px;
     }
     a{
@@ -176,10 +176,10 @@ img {
           </tbody></table>
 
 
-          <button onclick="myFunction2('Demo2')" class="w3-margin-top w3-button w3-block w3-left-align w3-margin-bottom w3-hover-light-gray w3-light-grey" style=" border-radius: 10px;"><strong>Table Of Contents : <i class="w3-right fa fa-angle-down"></i></strong></button>
+          <button onclick="myFunction2('Demo2')" class="w3-margin-top w3-button w3-block w3-left-align w3-margin-bottom w3-hover-green w3-green" style=" border-radius: 10px;"><strong>Table Of Contents : <i class="w3-right fa fa-angle-down"></i></strong></button>
 <div id="Demo2" class="w3-row w3-hide w3-display-container w3-light-grey" style=" border-radius: 10px;">
   
-  <div class="w3-display-topright w3-light-grey" style="margin-top:-50px ; margin-right: 15px;"><i class="fa fa-angle-up"></i></div>
+  <div class="w3-display-topright w3-green" style="margin-top:-50px ; margin-right: 15px;"><i class="fa fa-angle-up"></i></div>
     <table class="w3-table w3-margin-top w3-margin-bottom">
                        
             <tr>
@@ -425,9 +425,9 @@ function myFunction2(id) {
   <h2 class="w3-xlarge w3-margin-top">Related Links</h2>
 </div>
 
-  <div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 10px;">
+  <div class="w3-row w3-margin-top w3-light-grey" style="padding:12px; border-radius: 15px;">
 {% for post in site.posts %}
-<a class="w3-tag w3-green br10" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">
+<a class="w3-tag w3-green br10" style=" border-radius: 15px;" href="{{ site.url }}{{ post.url | remove: 'index.html' }}">
       {{ post.tag }}
     </a>
     {% endfor %}

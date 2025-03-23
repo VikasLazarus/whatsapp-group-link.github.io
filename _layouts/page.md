@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="{{ site.url }}/images/logo.png">
 
+<meta name="google-adsense-account" content="ca-pub-1638799423963498">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1638799423963498"
      crossorigin="anonymous"></script>
 

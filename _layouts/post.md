@@ -10,11 +10,6 @@
     <meta name="author" content="Whatsapp Group Link">
     <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="{{ site.url }}/images/logo.png">
-
-<meta name="google-adsense-account" content="ca-pub-1638799423963498">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1638799423963498"
-     crossorigin="anonymous"></script>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH3VZ65152"></script>
 <script>
@@ -33,6 +28,9 @@
     <style>
     .w3-round2{
       border-radius:10px;
+    }
+    img {
+      border-radius:15px;
     }
     .br10 {
         border-radius :15px;

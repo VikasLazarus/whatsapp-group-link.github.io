@@ -53,11 +53,8 @@ date1 : 23-03-2025
     
         
     "wordCount": "2480",
-    "keywords": [
-        "Earn 2000 rs per day",
-        "earn 2000 rs per day without investment",
-        
-    ],
+    
+   
     
 }
 </script>

@@ -7,57 +7,7 @@ keywords: "Earn 2000 RS Per Day, earn 2000 rs per day without investment"
 category: "Posts"
 date1 : 23-03-2025
 ---
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org/",
-    "@type": "BlogPosting",
-    "@id": "{{ site.url}}/{{ page.permalink }}#BlogPosting",
-    "mainEntityOfPage": "{{ site.url}}/{{ page.permalink }}",
-    "headline": "{{ page.title }}",
-    "name": "{{ page.title }}",
-    "description": "{{ page.discription }}",
-    "datePublished": "{{ page.date1}}",
-    "dateModified": "{{ page.date1}}",
-   
-    "publisher": {
-        "@type": "Organization",
-        "@id": "{{ site.url}}",
-        "name": "Whatsapp Group Link",
-        "logo": {
-            "@type": "ImageObject",
-            "@id": "{{ site.url}}/images/logo.png",
-            "url": "{{ site.url}}/images/logo.png",
-            "width": "600",
-            "height": "600"
-        }
-    },
-    "image": {
-        "@type": "ImageObject",
-        "@id": "{{ site.url}}/images/earn-2000-rs-per-day-without-investment-2.jpg",
-        "url": "{{ site.url}}/images/earn-2000-rs-per-day-without-investment-2.jpg",
-        "height": "362",
-        "width": "388"
-    },
-    "url": "{{ site.url}}/{{ page.permalink }}",
-    "isPartOf": {
-        "@type" : "Blog",
-         "@id": "{{ site.url}}",
-         "name": "Whatsapp Group link",
-         "publisher": {
-             "@type": "Organization",
-             "@id": "{{ site.url}}",
-             "name": "Whatsapp Group link"
-         }
-     },
-   
-    
-        
-    "wordCount": "2480",
-    
-   }
-    
-}
-</script>
+
 
 <h1>Earn 2000 RS Per Day Without Investment 2025</h1>
 

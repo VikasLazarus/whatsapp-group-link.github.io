@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Contact Us"
-discription: Know more about Whatsappgrouplink.in
+discription: contact us page of Whatsappgrouplink.in
 permalink: "contact-us.html"
 ---
 

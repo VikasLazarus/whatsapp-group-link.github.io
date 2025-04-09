@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Privacy Policy"
-discription: Know more about Whatsappgrouplink.in
+discription: Privacy Policy for Whatsappgrouplink.in
 permalink: "privacy-policy.html"
 ---
 

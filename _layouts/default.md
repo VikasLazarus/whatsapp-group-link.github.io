@@ -622,6 +622,46 @@ function myFunction2(id) {
                 </tr>
               </thead>
               <tbody>
+              <tr>
+    <td>Texas Land Investment Group</td>
+    <td><a href="https://chat.whatsapp.com/Dlw2sQOtyVfHRPtLsSMBGq" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>Passive Income USA</td>
+    <td><a href="https://chat.whatsapp.com/0pk0PzTxKHPI1qgQXhDC9c" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>USA Real Estate Investors</td>
+    <td><a href="https://chat.whatsapp.com/BhoQtemP5YYL4WEEKM7ren" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>New York Property Market</td>
+    <td><a href="https://chat.whatsapp.com/9C9bhJmx7vdAbYGVv8Ip2b" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>US Business & Networking Hub</td>
+    <td><a href="https://chat.whatsapp.com/IjpPGxvWvEx3dclaVKJMPo" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>Florida Real Estate Group</td>
+    <td><a href="https://chat.whatsapp.com/Gkjqc4Sk9xl8abnUk5Cf0Q" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>USA Property Listings</td>
+    <td><a href="https://chat.whatsapp.com/HcYIqVa02TRHKoSqj18QRi" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>California Housing Market</td>
+    <td><a href="https://chat.whatsapp.com/Laa0eU9xDUFA3VytSZoe8L" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>Sell Property Fast USA</td>
+    <td><a href="https://chat.whatsapp.com/LkreAyqNP8BGyhAeFHtOg6" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>Miami Real Estate Network</td>
+    <td><a href="https://chat.whatsapp.com/FBJ4ttRPj9kHHVK3VFxPBc" target="_blank">Join Group</a></td>
+</tr>
               </tbody>
               </table>
           <h2 class="w3-xlarge">Prediction WhatsApp Group links</h2>
@@ -635,6 +675,22 @@ function myFunction2(id) {
                 </tr>
               </thead>
               <tbody>
+              <tr>
+    <td>Crypto & Stock Price Predictions</td>
+    <td><a href="https://chat.whatsapp.com/DkYp2TMxEOOD3AITdlaGyt" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>Sports Betting & Odds Forecasts</td>
+    <td><a href="https://chat.whatsapp.com/C48f7jABhFQ3W7SHtbqfig" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>Election & Market Trend Predictions</td>
+    <td><a href="https://chat.whatsapp.com/LM1EsywFU205LzQuUpS6BR" target="_blank">Join Group</a></td>
+</tr>
+<tr>
+    <td>AI-Powered Future Forecasts</td>
+    <td><a href="https://chat.whatsapp.com/FqFh2PJSepq1S9h8BAHpwC" target="_blank">Join Group</a></td>
+</tr>
               </tbody>
               </table>
           <h2 class="w3-xlarge">Trading WhatsApp Group links</h2>

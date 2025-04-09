@@ -704,6 +704,47 @@ function myFunction2(id) {
                 </tr>
               </thead>
               <tbody>
+
+<td>8-Ball Pool Trading Group</td>
+            <td><a href="https://www.whtsagrouplinks.com//8-ball-pool-whatsapp-groups-links/" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>General Trading Group</td>
+            <td><a href="https://chat.whatsapp.com/EudyHhP6gUt1B5HmHVXd32" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Advanced Trading Group</td>
+            <td><a href="https://chat.whatsapp.com/LxYFW8TX3jPFYHjP6e1QDp" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Crypto Trading Channel</td>
+            <td><a href="https://www.whatsapp.com/channel/0029Vb7YygFFHWpyHR1OeD22" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Stock Market Traders</td>
+            <td><a href="https://chat.whatsapp.com/DiYKaaIK6pmKcBU18eiGo5" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Forex Trading Discussion</td>
+            <td><a href="https://chat.whatsapp.com/IWgYnWdvpHy8N5K74fEvRX" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Investment and Trading</td>
+            <td><a href="https://chat.whatsapp.com/KubzownQwkoETBWeYWWmXt" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Trading Tips & Signals</td>
+            <td><a href="https://chat.whatsapp.com/EaaPkFwyPq6I0UO43gRMzs" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Trade with Professionals</td>
+            <td><a href="https://chat.whatsapp.com/BrgEsKi4imqAhc0UgZSv9A" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Stock & Crypto Market</td>
+            <td><a href="https://chat.whatsapp.com/HhCHt34hq5kEiseWRwpumE" target="_blank">Join Group</a></td>
+        </tr>
+
               </tbody>
               </table>
           <h2 class="w3-xlarge">Youtube WhatsApp Group links</h2>
@@ -717,15 +758,463 @@ function myFunction2(id) {
                 </tr>
               </thead>
               <tbody>
+               <tr>
+            <td>YouTube Content Creators</td>
+            <td><a href="https://chat.whatsapp.com/LUcaBOth6TeDFgxkKZGMH9" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Growth and Tips</td>
+            <td><a href="https://chat.whatsapp.com/EovyrbQAxANJz8a1Bt5fcT" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Video Editing and YouTube</td>
+            <td><a href="https://chat.whatsapp.com/CvXTOeita52A04lMsv20vF" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Strategy & Analytics</td>
+            <td><a href="https://chat.whatsapp.com/IpwPWJWE5zK4O2aRoQkYx2" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Building a YouTube Channel</td>
+            <td><a href="https://chat.whatsapp.com/FvaLO8ES2H4H55FlIRIx5P" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Monetization for YouTubers</td>
+            <td><a href="https://chat.whatsapp.com/IYeZYBeKFvMAhXwXULG7K2" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Collaboration Network</td>
+            <td><a href="https://chat.whatsapp.com/HFhu3TJKzxRAImjLdnKl5w" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Content Feedback</td>
+            <td><a href="https://chat.whatsapp.com/KBHEqKVJj5RIWfOqLIowKw" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Channel Promotion</td>
+            <td><a href="https://chat.whatsapp.com/FY9HTi3vZhIKqNP8PejUFp" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Growth Mastermind</td>
+            <td><a href="https://chat.whatsapp.com/HspsQS9JfrHKPNFlhN6Xpc" target="_blank">Join Group</a></td>
+        </tr>
               </tbody>
               </table>
           <h2 class="w3-xlarge">Poetry WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+            <td>Poetic Souls</td>
+            <td><a href="https://chat.whatsapp.com/KBHEqKVJj5RIWfOqLIowKw" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Verses of the Heart</td>
+            <td><a href="https://chat.whatsapp.com/FY9HTi3vZhIKqNP8PejUFp" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Rhymes and Poems</td>
+            <td><a href="https://chat.whatsapp.com/B8WeIB8ZR0yEX7jugpz2g7" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Flowing Poetry</td>
+            <td><a href="https://chat.whatsapp.com/COj5f2ZHBcr188GPlwHXvb" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Poems in Motion</td>
+            <td><a href="https://chat.whatsapp.com/JB5vf43cNYaESuP9RIA6E7" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Verses and Vibes</td>
+            <td><a href="https://chat.whatsapp.com/HtQXYXEvLMx0mWTMPevBDd" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Words in Harmony</td>
+            <td><a href="https://chat.whatsapp.com/FBX2y3nuUugLADkZWtHHrG" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Echoes of Poetry</td>
+            <td><a href="https://chat.whatsapp.com/BDCgmR08YQL3SQkuIpRau8" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Poetry Beyond Words</td>
+            <td><a href="https://chat.whatsapp.com/CVG5VI6tPmtJZgIe4JlaZX" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Poetry Lovers United</td>
+            <td><a href="https://chat.whatsapp.com/Bu9VnptzSbl3U1qzeRUAsQ" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">Status WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+            <td>Inspirational Quotes</td>
+            <td><a href="https://chat.whatsapp.com/BcdIJ1E294k3dKleW76zMj" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Motivation and Positivity</td>
+            <td><a href="https://chat.whatsapp.com/GdDAGKtwjqAHRGfNH8ofjX" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Positive Life Status</td>
+            <td><a href="https://chat.whatsapp.com/CsG3aLYX5GI6TRbylhsMhC" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Success and Achievements</td>
+            <td><a href="https://chat.whatsapp.com/BWLI9GZQvr0AmkDemB4UO9" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Life Goals and Ambitions</td>
+            <td><a href="https://chat.whatsapp.com/LElA4m1RDzQKGbmbOi6Il2" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Mindset for Success</td>
+            <td><a href="https://chat.whatsapp.com/GsyuR1VSEf9GF2gXevODY1" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Life Reflections and Realizations</td>
+            <td><a href="https://chat.whatsapp.com/I06zplDM1vW9HJIHhwm1Aw" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Inspirational Quotes for Success</td>
+            <td><a href="https://chat.whatsapp.com/Gh4RgvMxoRWIrWE42TeLgX" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Daily Status Updates</td>
+            <td><a href="https://chat.whatsapp.com/JC2veqOKK2BJ4W5qKWHs8f" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Thoughts of the Day</td>
+            <td><a href="https://chat.whatsapp.com/CT5mn9URZgP5H36nwd3KzI" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">Business WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+            <td>Entrepreneurs Network</td>
+            <td><a href="https://www.whatsapp.com/channel/0029Vaiz4Oa7YSd9xM2Mrs1N" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Startup Growth and Ideas</td>
+            <td><a href="https://chat.whatsapp.com/FDSlCV3vdHgKzNPFlZ46Ai" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Business Strategy Group</td>
+            <td><a href="https://chat.whatsapp.com/DQcK9przFnRHhRMLuHX1Q7" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Marketing Masterminds</td>
+            <td><a href="https://chat.whatsapp.com/G6NjkxxCOepDCZZyiWV3Ei" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Financial Management Network</td>
+            <td><a href="https://chat.whatsapp.com/EKEMkvl7qwHKUp8MhdQg4r" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Business Innovations Hub</td>
+            <td><a href="https://chat.whatsapp.com/DVuKEcgHRKML3yuwOdvoAC" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Leadership and Business Growth</td>
+            <td><a href="https://chat.whatsapp.com/E9H2cuLZzTNCFkVjYLxa2R" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Entrepreneurial Success</td>
+            <td><a href="https://chat.whatsapp.com/IpbAsKhb2zR0sf4ovt9EXp" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Business Networking & Opportunities</td>
+            <td><a href="https://chat.whatsapp.com/Fmcjed5tRj5ICPTJUOwHSy" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Global Business Leaders</td>
+            <td><a href="https://chat.whatsapp.com/Kz1ArpdPC9vCnUD9cjoN17" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">Social Media WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+               <tr>
+            <td>Instagram Marketing Tips</td>
+            <td><a href="https://chat.whatsapp.com/EPeoppRoPrn3enRFswRceL" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Facebook Growth Hacks</td>
+            <td><a href="https://chat.whatsapp.com/GnK9OppXbO95oymaC2kZK4" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Twitter Strategies and Tips</td>
+            <td><a href="https://chat.whatsapp.com/BDBQVzCsqvoGrnss3K3DfG" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Social Media Content Creation</td>
+            <td><a href="https://chat.whatsapp.com/DWk9wMBlZQaAM6wketkg8y" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>YouTube Growth and Promotion</td>
+            <td><a href="https://chat.whatsapp.com/HOFHpGGhpddJikmKphQlXv" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>LinkedIn Networking for Professionals</td>
+            <td><a href="https://chat.whatsapp.com/DESDq8CsJQ9C7EwzEuZQ4t" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Social Media Influencers</td>
+            <td><a href="https://chat.whatsapp.com/JwE7SlTdpGE1fa5ex9WqB8" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Social Media Branding</td>
+            <td><a href="https://chat.whatsapp.com/Bdtn2NCUMPBJwieO0S8tAM" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Snapchat Marketing Group</td>
+            <td><a href="https://chat.whatsapp.com/IcJfyjuuAKzInJSTswvATa" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Social Media Growth Forum</td>
+            <td><a href="https://chat.whatsapp.com/DnK7c7UuqSE2X8Cv4vR1vf" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">Students WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+            <td>Study Buddies</td>
+            <td><a href="https://chat.whatsapp.com/IYR2h3jmKQ26zIQM0LXrIT" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Exam Preparation</td>
+            <td><a href="https://chat.whatsapp.com/F0VZU7dCEqYDL1z8dvD1qQ" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Students Learning Hub</td>
+            <td><a href="https://chat.whatsapp.com/HKQlptSnmPILRy5M1GnRIN" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Project Collaboration</td>
+            <td><a href="https://chat.whatsapp.com/KCj5YEOWXAICDPul582nXX" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>College Talk</td>
+            <td><a href="https://chat.whatsapp.com/DWmiGKDYOoAHtwNKVVyFuU" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Homework Help</td>
+            <td><a href="https://chat.whatsapp.com/IpXgH7KOwYU0NNaNslfB5N" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Scholarship Opportunities</td>
+            <td><a href="https://chat.whatsapp.com/K2q5415Ruyr4Ln7LIKICVc" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Study Resources</td>
+            <td><a href="https://chat.whatsapp.com/EaEdL7NtBNxFgDzKOzqjrz" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Group Study Sessions</td>
+            <td><a href="https://chat.whatsapp.com/DK5DNPhTnqA1AJXT38Hgio" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>University Discussion</td>
+            <td><a href="https://chat.whatsapp.com/DFiEWqOyRjgJugnBMqfGaX" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">English Learning WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+            <td>English Conversation Practice</td>
+            <td><a href="https://chat.whatsapp.com/Cm5oykfnOjsEUwGsl9CH66" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Learn English Daily</td>
+            <td><a href="https://chat.whatsapp.com/DOshaznWGe848rFxh7Rx3I" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>English Skills Mastery</td>
+            <td><a href="https://www.whatsapp.com/channel/0029Va9EbfC7j6fx6Daud819" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>English Language Learning Hub</td>
+            <td><a href="https://chat.whatsapp.com/E2MYRoEZ2XKCCXU5mjZHBR" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>English for Beginners</td>
+            <td><a href="https://chat.whatsapp.com/FVoZSdsB09O7wMhuxiwmEU" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>English Learning Community</td>
+            <td><a href="https://chat.whatsapp.com/Ftb30i7FJ6U2akfxPyOd8c" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Practice English with Native Speakers</td>
+            <td><a href="https://chat.whatsapp.com/F6rQEKfgbIUIuZ51VRNlOh" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Advanced English Speakers</td>
+            <td><a href="https://chat.whatsapp.com/H2ERnHsETScGW8gBPUBsLK" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Fluent English Club</td>
+            <td><a href="https://chat.whatsapp.com/Lv1V5crgcqY8LPWEKhXfFM" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>English Grammar and Vocabulary</td>
+            <td><a href="https://chat.whatsapp.com/CQ30KMfQUzxHtNn1sBY4W5" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">Gaming WhatsApp Group links</h2>
+           <table class="w3-table w3-striped">
+
+         
+              <thead>
+                <tr>
+                  <th>Group Name</th>
+                  <th>Join Link</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+            <td>Mobile Gaming Lovers</td>
+            <td><a href="https://chat.whatsapp.com/Ekwll4hTz9f3LDXNp2FZft" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Fortnite Battle Royale Players</td>
+            <td><a href="https://chat.whatsapp.com/LHPY1jwRVhB9HYhD6hJ7Wt" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>League of Legends Community</td>
+            <td><a href="https://chat.whatsapp.com/LjPPgdyGGVYB5XZskG3bfj" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Gamer's Hub</td>
+            <td><a href="https://chat.whatsapp.com/K1uQt3f0fRp5Fz4zJxJKe6" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Call of Duty Players</td>
+            <td><a href="https://chat.whatsapp.com/HiyWWCKzm7XLEPukul1t8p" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Battle Royale Community</td>
+            <td><a href="https://chat.whatsapp.com/DkzqSA3AL1S78Yx2OLOWCF" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Fortnite Players</td>
+            <td><a href="https://chat.whatsapp.com/EM3nKEqEQ3D8ieqxjpGza4" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Among Us Gaming</td>
+            <td><a href="https://chat.whatsapp.com/IZEBVl3fHbs139jON2X0QD" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Apex Legends Fans</td>
+            <td><a href="https://chat.whatsapp.com/LlhfhxhZhFFD7sbGzRqaRR" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Multiplayer Gaming Community</td>
+            <td><a href="https://chat.whatsapp.com/FUU9x7JltRfBppKGDvSFdf" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Esports Discussion Group</td>
+            <td><a href="https://chat.whatsapp.com/JHbS58NpUPzFXnazC6B0eH" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Gamer's Lounge</td>
+            <td><a href="https://chat.whatsapp.com/EM3nKEqEQ3D8ieqxjpGza4" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Online Gaming Network</td>
+            <td><a href="https://chat.whatsapp.com/GVJOCcjfEiw3q4yIUjnivh" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Game Nights</td>
+            <td><a href="https://chat.whatsapp.com/FmyqeHjraGf69j9WTdKCuq" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Console Gaming Chat</td>
+            <td><a href="https://chat.whatsapp.com/FyKR4DeUhpo2TwlaRVNC8j" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Gamer's Talk</td>
+            <td><a href="https://chat.whatsapp.com/LCQJDeaqQ2KAULcI6fUDrP" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Video Game Enthusiasts</td>
+            <td><a href="https://chat.whatsapp.com/BP6POHhxiRyKhFuzkCwjd1" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Game Development Community</td>
+            <td><a href="https://chat.whatsapp.com/EQUdiuFQdPdD7aQebB4sWz" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>FIFA Football Fans</td>
+            <td><a href="https://chat.whatsapp.com/GVN4Qlxe3LrFtCqLfazY9D" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Gaming Events</td>
+            <td><a href="https://chat.whatsapp.com/Gtsuf383cWv5u4QqcLgwRT" target="_blank">Join Group</a></td>
+        </tr>
+        <tr>
+            <td>Gamer's Paradise</td>
+            <td><a href="https://chat.whatsapp.com/K4uF6iHFukh9hldlWkuYRK" target="_blank">Join Group</a></td>
+        </tr>
+              </tbody>
+              </table>
           <h2 class="w3-xlarge">Rules for WhatsApp Groups links</h2>
 
 

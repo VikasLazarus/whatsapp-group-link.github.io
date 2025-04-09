@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Submit Group"
-discription: Know more about Whatsappgrouplink.in
+discription: Submit your WhatsApp group link to Whatsappgrouplink.in
 permalink: "submit.html"
 ---
 

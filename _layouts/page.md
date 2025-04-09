@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{page.title}} - Whatsappgrouplink.in</title>
+    <title>{{page.title}}</title>
     <meta name="description"
         content="{{ page.discription }}">
     <meta name="keywords"

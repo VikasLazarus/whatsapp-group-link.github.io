@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Disclaimer"
-discription: Know more about Whatsappgrouplink.in
+discription: Disclaimer page of Whatsappgrouplink.in
 permalink: "disclaimer.html"
 ---
 

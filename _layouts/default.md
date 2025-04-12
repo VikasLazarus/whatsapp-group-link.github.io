@@ -256,15 +256,15 @@ function myFunction2(id) {
         
 
         <div class="w3-row w3-margin-bottom">
-            <h2 class="w3-xlarge">Indian WhatsApp Group Link To Join</h2>
-            <p>An Indian WhatsApp group link is your gateway to joining vibrant communities tailored to your interests. whether it’s business, education, entertainment, or lifestyle. These links allow users and connect with individuals across India, fostering collaboration, knowledge sharing, and networking.</p>
+            <h2 class="w3-xlarge"><a href="{{ site.url }}/indian-whatsapp-group-link.html">Indian WhatsApp Group Link</a> To Join</h2>
+            <p>An <a href="{{ site.url }}/indian-whatsapp-group-link.html">Indian WhatsApp group link</a> is your gateway to joining vibrant communities tailored to your interests. whether it’s business, education, entertainment, or lifestyle. These links allow users and connect with individuals across India, fostering collaboration, knowledge sharing, and networking.</p>
            
 
 <img src="{{ site.url }}/images/indian-whatsapp-group-link.jpg" alt="Indian {{ page.title}}" width="100%">
 
-            <p><b>Indian Whatsapp group link</b> With the rise of digital communication. Indian WhatsApp groups have become a popular platform for staying updated on trends, discussing topics, and building meaningful Indian Whatsapp group link connections. Indian WhatsApp group link Join free WhatsApp groups in India, and active WhatsApp group invites.</p>
+            <p><b><a href="{{ site.url }}/indian-whatsapp-group-link.html">Indian Whatsapp group link</a></b> With the rise of digital communication. Indian WhatsApp groups have become a popular platform for staying updated on trends, discussing topics, and building meaningful <a href="{{ site.url }}/indian-whatsapp-group-link.html">Indian Whatsapp group link</a> connections. <a href="{{ site.url }}/indian-whatsapp-group-link.html">Indian WhatsApp group link</a> Join free WhatsApp groups in India, and active WhatsApp group invites.</p>
 
-             <p>Whether you’re looking for professional <b>Indian Whatsapp Gorup Link</b> networks, hobby-based groups, or regional communities. Indian WhatsApp group links offer a convenient and efficient way to engage with others. Always make sure you join groups that align with your interests and follow group rules for a positive experience.</p>
+             <p>Whether you’re looking for professional <b>Indian Whatsapp Gorup Link</b> networks, hobby-based groups, or regional communities. <a href="{{ site.url }}/indian-whatsapp-group-link.html">Indian WhatsApp group link</a>s offer a convenient and efficient way to engage with others. Always make sure you join groups that align with your interests and follow group rules for a positive experience.</p>
           
             <table class="w3-table w3-striped">
         

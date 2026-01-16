@@ -53,7 +53,7 @@ h6 {
   padding: 0.01em 16px;
 }
 .w3-row-padding, .w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird {
-  padding: 0 8px;
+  padding: 0 16px;
 }
 .w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
   float: left;
@@ -126,6 +126,7 @@ h6 {
 /* Spacing */
 .w3-margin { margin: 16px!important; }
 .w3-margin-top { margin-top: 16px!important; }
+.w3-margin-bottom { margin-top: 16px!important; }
 .w3-padding-large { padding: 12px 24px!important; }
 .w3-padding-64 { padding-top: 64px!important; padding-bottom: 64px!important; }
 

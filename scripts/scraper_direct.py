@@ -6,25 +6,46 @@ import time
 from bs4 import BeautifulSoup
 
 # --- CONFIGURATION ---
-# Now you can put multiple URLs inside the square brackets []
 TARGETS = {
     "Indian Groups": [
-        "https://whtsgroupslinks.com/indian-whatsapp-group-links/",
-        "https://whtsgroupslinks.com/kerala-whatsapp-group-links/",
-        "https://whtsgroupslinks.com/tamil-whatsapp-group-links/"
+        
+       "https://whtsgroupslinks.com/",
+       "https://whatsupgrouplink.com/",
+       "https://www.wa-contact-extractor.com/post/active-whatsapp-group-links[citation:3]",
+       "https://wgrouplinks.com/",
+       "https://indiansinlondonuk.com/whatsapp-groups/",
+       "https://topwhatsappgrouplinks.wordpress.com/",
+       "https://sites.google.com/view/whatsapp-group-link-join-only",
+       "https://about.me/whatsapp_grouplinks",
+       "https://www.prmoment.in/pr-insight/your-guide-to-pr-focused-whatsapp-channels-in-india",
+       "https://wagroupjoin.com/",
+       "https://grouplinks.org/",
+       "https://wgroupjoin.com/",
+       "https://web.whatsapp.com/",
+       "https://groups.whatsapp.com/",
+       "https://grouplinkz.com/",
+       "https://whatsappgroup4u.com/",
+       "https://grouplinku.com/",
+       "https://webgruplink.com/",
+       "https://webwagrouplinks.com/",
+       "https://wagroupinvite.com/",
+       "https://joingroups.in/",
+       "https://joinwhatsappgrouplinks.com/",
+       "https://webwagroupinvites.com/",
+       "https://groupsor.link/"
+  
     ],
     "USA & UK Groups": [
-        "https://whtsgroupslinks.com/usa-whatsapp-group-links/",
-        "https://whtsgroupslinks.com/uk-whatsapp-group-links/"
+        "https://whtsgroupslinks.com/usa-whatsapp-group-links/"
     ],
     "Funny & Entertainment": [
-        "https://whtsgroupslink.com/funny-whatsapp-group-link/",
-        "https://whtsgroupslinks.com/funny-whatsapp-group-links/",
-        "https://whtsgroupslinks.com/movies-whatsapp-group-links/"
+        "https://whtsgroupslinks.com/funny-whatsapp-group-links/"
     ],
-    "Girls & Friendship": [
-        "https://whtsgroupslinks.com/girls-whatsapp-group-links/",
-        "https://whtsgroupslink.com/girl-whatsapp-group-link/"
+     "pakistani Groups": [
+        "https://whtsgroupslinks.com/funny-whatsapp-group-links/"
+    ],
+     "Tamil Groups": [
+        "https://whtsgroupslinks.com/funny-whatsapp-group-links/"
     ]
 }
 
@@ -34,10 +55,17 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
+# List of generic names to BLOCK
+BLOCKED_NAMES = [
+    "Active WhatsApp Group",
+    "WhatsApp Group Invite",
+    "WhatsApp Group",
+    "WhatsApp"
+]
+
 def validate_whatsapp_link(link):
     """
-    Visits the WhatsApp invite link to check if it's active.
-    Returns: (is_active, real_group_name)
+    Visits the link. Returns (True, Name) ONLY if the name is specific.
     """
     try:
         response = requests.get(link, headers=HEADERS, timeout=10)
@@ -46,21 +74,32 @@ def validate_whatsapp_link(link):
             soup = BeautifulSoup(response.text, 'html.parser')
             page_text = soup.get_text().lower()
             
-            # Check for dead link indicators
+            # 1. Check for dead link indicators
             if "revoked" in page_text or "doesn't exist" in page_text or "reset" in page_text:
                 return False, None
             
-            # Extract Real Group Name
+            # 2. Extract Real Group Name
+            group_name = None
             meta_title = soup.find("meta", property="og:title")
+            
             if meta_title:
                 group_name = meta_title.get("content")
-                if group_name and "WhatsApp Group Invite" not in group_name and "WhatsApp" != group_name:
-                    return True, group_name
-                return True, "Active WhatsApp Group"
             
-            h3_title = soup.find("h3")
-            if h3_title:
-                return True, h3_title.get_text(strip=True)
+            # Fallback if meta tag is empty
+            if not group_name:
+                h3_title = soup.find("h3")
+                if h3_title:
+                    group_name = h3_title.get_text(strip=True)
+
+            # 3. STRICT NAME FILTER
+            if group_name:
+                # Remove extra spaces and check against blocklist
+                clean_name = group_name.strip()
+                
+                if clean_name in BLOCKED_NAMES:
+                    return False, None # Reject generic names
+                
+                return True, clean_name
 
     except Exception:
         return False, None
@@ -79,14 +118,12 @@ def extract_links_from_page(html):
     return list(set(candidates))
 
 def main():
-    print("--- STARTING MULTI-SOURCE SCRAPE ---")
+    print("--- STARTING STRICT NAME SCRAPE ---")
     valid_data = []
 
-    # Loop through each Category
     for category, urls_list in TARGETS.items():
         print(f"\nProcessing Category: {category}...")
         
-        # Loop through each URL in that Category
         for url in urls_list:
             print(f"  Scraping URL: {url}...")
             try:
@@ -96,28 +133,27 @@ def main():
                     print(f"    Found {len(potential_links)} potential links. Validating...")
                     
                     for i, link in enumerate(potential_links):
-                        # Validate Link
                         is_active, real_name = validate_whatsapp_link(link)
                         
                         if is_active:
                             valid_data.append({
-                                "category": category, # Assigns the main category name
+                                "category": category,
                                 "group_name": real_name,
                                 "whatsapp_link": link,
                                 "status": "Active"
                             })
                             print(f"      [OK] {real_name}")
                         else:
-                            print(f"      [X] Dead Link", end="\r")
+                            # Useful for debugging: see what got rejected
+                            # print(f"      [X] Rejected/Dead") 
+                            pass
                             
-                        # Important: Sleep to prevent blocking
                         time.sleep(1.5)
                 else:
                     print(f"    !! Failed to load (Status: {response.status_code})")
             except Exception as e:
                 print(f"    !! Error scraping {url}: {e}")
             
-            # Sleep between different URL pages
             time.sleep(2)
 
     # SAVE LOGIC
@@ -136,9 +172,9 @@ def main():
 
         final_df = final_df.drop_duplicates(subset=['whatsapp_link'])
         final_df.to_csv(OUTPUT_FILE, index=False)
-        print(f"\nSUCCESS: Saved {len(final_df)} ACTIVE links to {OUTPUT_FILE}")
+        print(f"\nSUCCESS: Saved {len(final_df)} NAMED links to {OUTPUT_FILE}")
     else:
-        print("\nNo active links found.")
+        print("\nNo valid links found.")
 
 if __name__ == "__main__":
     main()

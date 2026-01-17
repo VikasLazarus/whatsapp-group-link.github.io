@@ -39,3 +39,40 @@ h1: "Explore All Unlimited Active WhatsApp Groups"
   {% endfor %}
 
 </div>
+
+<div class="groups-container">
+  
+  {% assign grouped_links = site.data.whatsapp_links | group_by: "category" %}
+  
+  {% for category in grouped_links %}
+    
+    <h2 class="w3-text-green w3-padding-top">{{ category.name }}</h2>
+    
+    <div class="w3-responsive">
+      <table class="w3-table w3-striped w3-bordered">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>Group Name</th>
+            <th>Added On</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in category.items limit: 10 %} 
+            <tr>
+              <td>{{ row.group_name }}</td>
+              <td><span class="w3-tag w3-small w3-round">{{ row.date_added }}</span></td>
+              <td>
+                <a href="{{ row.whatsapp_link }}" target="_blank" rel="nofollow noopener" class="w3-button w3-green w3-round w3-small">
+                  Join Group
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    
+  {% endfor %}
+  
+</div>

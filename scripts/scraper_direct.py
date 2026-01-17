@@ -5,10 +5,19 @@ import os
 import time
 from bs4 import BeautifulSoup
 
-# --- CONFIGURATION ---
+# --- 1. SOURCE CONFIGURATION ---
 TARGETS = {
+    # We still need sources to find links, but the category name here acts as a "Fallback"
     "Indian Groups": [
-        
+        "https://whtsgroupslinks.com/indian-whatsapp-group-links/",
+        "https://whtsgroupslinks.com/kerala-whatsapp-group-links/"
+    ],
+    "USA & International": [
+        "https://whtsgroupslinks.com/usa-whatsapp-group-links/"
+    ],
+    "General Mix": [
+        "https://whtsgroupslinks.com/active-whatsapp-group-links/",
+
        "https://whtsgroupslinks.com/",
        "https://whatsupgrouplink.com/",
        "https://www.wa-contact-extractor.com/post/active-whatsapp-group-links[citation:3]",
@@ -34,19 +43,18 @@ TARGETS = {
        "https://webwagroupinvites.com/",
        "https://groupsor.link/"
   
-    ],
-    "USA & UK Groups": [
-        "https://whtsgroupslinks.com/usa-whatsapp-group-links/"
-    ],
-    "Funny & Entertainment": [
-        "https://whtsgroupslinks.com/funny-whatsapp-group-links/"
-    ],
-     "pakistani Groups": [
-        "https://whtsgroupslinks.com/funny-whatsapp-group-links/"
-    ],
-     "Tamil Groups": [
-        "https://whtsgroupslinks.com/funny-whatsapp-group-links/"
     ]
+}
+
+# --- 2. AUTO-CATEGORY RULES ---
+# If a group name contains these keywords, it gets moved to that category instantly.
+AUTO_CATEGORIES = {
+    "Cricket & Sports": ["cricket", "ipl", "match", "dream11", "football", "sport", "game"],
+    "Jobs & Careers": ["job", "vacancy", "hiring", "work", "internship", "sarkari", "naukri"],
+    "Tech & Coding": ["python", "java", "coding", "developer", "hack", "tech", "web", "design"],
+    "Crypto & Trading": ["crypto", "btc", "bitcoin", "trading", "forex", "invest", "money", "earn"],
+    "Funny & Memes": ["funny", "meme", "joke", "masti", "comedy", "video", "status"],
+    "Education & Study": ["study", "student", "class", "exam", "college", "university", "notes"]
 }
 
 OUTPUT_FILE = "_data/whatsapp_links.csv"
@@ -55,55 +63,52 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9"
 }
 
-# List of generic names to BLOCK
-BLOCKED_NAMES = [
-    "Active WhatsApp Group",
-    "WhatsApp Group Invite",
-    "WhatsApp Group",
-    "WhatsApp"
-]
+# Generic names to reject
+BLOCKED_NAMES = ["Active WhatsApp Group", "WhatsApp Group Invite", "WhatsApp Group", "WhatsApp"]
+
+def determine_category(group_name, fallback_category):
+    """
+    Analyzes the group name to find a better category.
+    If no keyword matches, it returns the fallback (source) category.
+    """
+    name_lower = group_name.lower()
+    
+    for category, keywords in AUTO_CATEGORIES.items():
+        for keyword in keywords:
+            # Check if keyword is in the name (e.g. "ipl" in "IPL 2026 Fans")
+            if keyword in name_lower:
+                return category
+                
+    return fallback_category
 
 def validate_whatsapp_link(link):
-    """
-    Visits the link. Returns (True, Name) ONLY if the name is specific.
-    """
     try:
         response = requests.get(link, headers=HEADERS, timeout=10)
-        
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             page_text = soup.get_text().lower()
             
-            # 1. Check for dead link indicators
             if "revoked" in page_text or "doesn't exist" in page_text or "reset" in page_text:
                 return False, None
             
-            # 2. Extract Real Group Name
             group_name = None
             meta_title = soup.find("meta", property="og:title")
-            
             if meta_title:
                 group_name = meta_title.get("content")
             
-            # Fallback if meta tag is empty
             if not group_name:
                 h3_title = soup.find("h3")
                 if h3_title:
                     group_name = h3_title.get_text(strip=True)
 
-            # 3. STRICT NAME FILTER
             if group_name:
-                # Remove extra spaces and check against blocklist
                 clean_name = group_name.strip()
-                
                 if clean_name in BLOCKED_NAMES:
-                    return False, None # Reject generic names
-                
+                    return False, None
                 return True, clean_name
 
     except Exception:
         return False, None
-
     return False, None
 
 def extract_links_from_page(html):
@@ -118,42 +123,38 @@ def extract_links_from_page(html):
     return list(set(candidates))
 
 def main():
-    print("--- STARTING STRICT NAME SCRAPE ---")
+    print("--- STARTING SMART-CATEGORY SCRAPE ---")
     valid_data = []
 
-    for category, urls_list in TARGETS.items():
-        print(f"\nProcessing Category: {category}...")
+    for source_cat, urls_list in TARGETS.items():
+        print(f"\nScanning Source: {source_cat}...")
         
         for url in urls_list:
-            print(f"  Scraping URL: {url}...")
             try:
                 response = requests.get(url, headers=HEADERS, timeout=15)
                 if response.status_code == 200:
                     potential_links = extract_links_from_page(response.text)
-                    print(f"    Found {len(potential_links)} potential links. Validating...")
+                    print(f"  Found {len(potential_links)} links on {url}. Validating...")
                     
-                    for i, link in enumerate(potential_links):
+                    for link in potential_links:
                         is_active, real_name = validate_whatsapp_link(link)
                         
                         if is_active:
+                            # --- MAGIC HAPPENS HERE ---
+                            # We ignore the source category if the name matches a specific niche
+                            final_category = determine_category(real_name, source_cat)
+                            
                             valid_data.append({
-                                "category": category,
+                                "category": final_category,
                                 "group_name": real_name,
                                 "whatsapp_link": link,
                                 "status": "Active"
                             })
-                            print(f"      [OK] {real_name}")
-                        else:
-                            # Useful for debugging: see what got rejected
-                            # print(f"      [X] Rejected/Dead") 
-                            pass
-                            
+                            print(f"    [OK] {real_name} -> Assigned to: {final_category}")
+                        
                         time.sleep(1.5)
-                else:
-                    print(f"    !! Failed to load (Status: {response.status_code})")
             except Exception as e:
-                print(f"    !! Error scraping {url}: {e}")
-            
+                print(f"    Error: {e}")
             time.sleep(2)
 
     # SAVE LOGIC
@@ -172,9 +173,9 @@ def main():
 
         final_df = final_df.drop_duplicates(subset=['whatsapp_link'])
         final_df.to_csv(OUTPUT_FILE, index=False)
-        print(f"\nSUCCESS: Saved {len(final_df)} NAMED links to {OUTPUT_FILE}")
+        print(f"\nSUCCESS: Saved {len(final_df)} Auto-Categorized links.")
     else:
-        print("\nNo valid links found.")
+        print("\nNo links found.")
 
 if __name__ == "__main__":
     main()

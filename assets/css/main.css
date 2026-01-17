@@ -63,7 +63,7 @@ h6 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: 
 /* --- COLORS --- */
 .w3-green { color: #fff!important; background-color: #1D1E18!important; }
 .w3-white { color: #000!important; background-color: #fff!important; }
-.w3-black { color: #fff!important; background-color: #000!important; }
+.w3-black { color: #fff!important; background-color: #1D1E18!important; }
 .w3-light-grey, .w3-light-gray { color: #000!important; background-color: #f1f1f1!important; }
 .w3-text-dark-gray, .w3-text-dark-grey { color: #3a3a3a!important; }
 .w3-text-gray, .w3-text-grey { color: #757575!important; }

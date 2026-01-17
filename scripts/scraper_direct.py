@@ -99,3 +99,41 @@ def main():
                         valid_data.append({
                             "category": category,
                             "group_name": real_name, # The REAL name from WhatsApp
+                            "whatsapp_link": link,
+                            "status": "Active"       # New Field
+                        })
+                        # Sleep to avoid WhatsApp blocking our IP
+                        time.sleep(1.5) 
+                print("") # New line after loop
+            else:
+                print(f"  !! Failed to load source (Status: {response.status_code})")
+        except Exception as e:
+            print(f"  !! Error: {e}")
+
+    # SAVE LOGIC
+    if valid_data:
+        os.makedirs('_data', exist_ok=True)
+        new_df = pd.DataFrame(valid_data)
+        
+        # Load existing
+        if os.path.exists(OUTPUT_FILE):
+            try:
+                old_df = pd.read_csv(OUTPUT_FILE)
+                # We prioritize the NEW data (fresh validation)
+                final_df = pd.concat([new_df, old_df])
+            except:
+                final_df = new_df
+        else:
+            final_df = new_df
+
+        # Remove duplicates based on Link
+        final_df = final_df.drop_duplicates(subset=['whatsapp_link'])
+        
+        # Save
+        final_df.to_csv(OUTPUT_FILE, index=False)
+        print(f"\nSUCCESS: Saved {len(final_df)} ACTIVE links to {OUTPUT_FILE}")
+    else:
+        print("\nNo active links found.")
+
+if __name__ == "__main__":
+    main()

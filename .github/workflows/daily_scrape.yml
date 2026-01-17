@@ -1,0 +1,39 @@
+name: Auto Scraper
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs at Midnight UTC
+  workflow_dispatch:      # Allows manual click to test
+
+permissions:
+  contents: write         # Permission to update the repo
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Python Setup
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Libraries
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run Scraper
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        run: python scripts/scraper.py
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "LinkBot"
+          git config --global user.email "bot@noreply.github.com"
+          git add _data/whatsapp_links.csv
+          # Only commit if file changed
+          git commit -m "Auto-update: Found new links" || echo "No changes to commit"
+          git push

@@ -16,10 +16,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
-  color: #333;
+  color: #1D1E18;
   margin-top: 10px;
 }
-h1 { font-size: 3.052rem; } /* ~49px */
+h1 {color: #ffffff !important; font-size: 3.052rem; } /* ~49px */
 h2 { font-size: 2.441rem; } /* ~39px */
 h3 { font-size: 1.953rem; } /* ~31px */
 h4 { font-size: 1.563rem; } /* ~25px */

@@ -18,11 +18,13 @@ TARGETS = {
         "https://whtsgroupslinks.com/uk-whatsapp-group-links/"
     ],
     "Funny & Entertainment": [
+        "https://whtsgroupslink.com/funny-whatsapp-group-link/",
         "https://whtsgroupslinks.com/funny-whatsapp-group-links/",
         "https://whtsgroupslinks.com/movies-whatsapp-group-links/"
     ],
     "Girls & Friendship": [
-        "https://whtsgroupslinks.com/girls-whatsapp-group-links/"
+        "https://whtsgroupslinks.com/girls-whatsapp-group-links/",
+        "https://whtsgroupslink.com/girl-whatsapp-group-link/"
     ]
 }
 

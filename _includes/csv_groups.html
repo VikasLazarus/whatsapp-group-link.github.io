@@ -1,0 +1,72 @@
+<style>
+  .group-table-container {
+    margin: 20px 0;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  .w3-table td, .w3-table th {
+    vertical-align: middle;
+  }
+  .btn-join {
+    background-color: #25D366;
+    color: white !important;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .btn-join:hover {
+    background-color: #128C7E;
+  }
+  .status-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+</style>
+
+<div class="group-table-container">
+  {% assign target_cat = include.category | default: page.csv_category %}
+  {% assign groups = site.data.whatsapp_links | where: "category", target_cat %}
+
+  {% if groups.size > 0 %}
+    <table class="w3-table w3-striped w3-bordered">
+      <thead class="w3-light-grey">
+        <tr>
+          <th>Group Name</th>
+          <th class="w3-hide-small">Status</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in groups %}
+          <tr>
+            <td>
+              <strong>{{ row.group_name }}</strong>
+            </td>
+            
+            <td class="w3-hide-small">
+              <span class="status-dot"></span> Active
+            </td>
+            
+            <td>
+              <a href="{{ row.whatsapp_link }}" target="_blank" rel="nofollow noopener" class="btn-join">
+                Join
+              </a>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow">
+      <p><strong>Note:</strong> No active groups found for "{{ target_cat }}" at the moment. Our bot is scraping new links. Check back in 24 hours!</p>
+    </div>
+  {% endif %}
+</div>

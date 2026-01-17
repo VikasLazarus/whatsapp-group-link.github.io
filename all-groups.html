@@ -2,7 +2,7 @@
 layout: page
 permalink : /all-groups.html
 title: "Explore All Active WhatsApp Group Links Join 2026"
-disc: ""
+disc: "all Groups"
 key: ""
 last_modified_at: 2025-01-15
 h1: "Explore All Unlimited Active WhatsApp Groups"
@@ -24,11 +24,11 @@ h1: "Explore All Unlimited Active WhatsApp Groups"
         <div class="w3-row" style="width: 100%; height: 200px;">
         <img src="assets/images/{{ post.img }}" alt="{{ post.imgalt }}" style="object-fit: cover; overflow: hidden; height: 100%; width:100%">
     </div>
-        <div class="w3-container">
+        <div class="w3-container w3-padding">
           <h2 class="w3-large"> {{ post.title }}</h2>
            <time style="font-weight: 700;" class="w3-small" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
           
-          <p class="w3-small w3-text-gray">{{ post.content | strip_html | truncatewords: 29 }}<br> continue Reading...</p>
+          <p class="w3-small">{{ post.content | strip_html | truncatewords: 29 }}<br> continue Reading...</p>
           
         </div>
       </div>

@@ -8,7 +8,7 @@ import random
 from bs4 import BeautifulSoup
 
 # --- CONFIGURATION ---
-KEYWORDS = ["movies", "crypto", "students", "funny memes", "jobs"]
+KEYWORDS = ["whatsapp group links", "indian whatsapp group links", "new whatsapp group links", "join whatsapp group links", "pakistani whatsapp group links"]
 OUTPUT_FILE = "_data/whatsapp_links.csv"
 
 # Real Browser Headers (Crucial for bypassing blocks)

@@ -6,11 +6,24 @@ import time
 from bs4 import BeautifulSoup
 
 # --- CONFIGURATION ---
+# Now you can put multiple URLs inside the square brackets []
 TARGETS = {
-    "Indian Groups": "https://whtsgroupslinks.com/indian-whatsapp-group-links/",
-    "USA Groups": "https://whtsgroupslinks.com/usa-whatsapp-group-links/",
-    "Funny & Memes": "https://whtsgroupslinks.com/funny-whatsapp-group-links/",
-    "Girls & Friendship": "https://whtsgroupslinks.com/girls-whatsapp-group-links/"
+    "Indian Groups": [
+        "https://whtsgroupslinks.com/indian-whatsapp-group-links/",
+        "https://whtsgroupslinks.com/kerala-whatsapp-group-links/",
+        "https://whtsgroupslinks.com/tamil-whatsapp-group-links/"
+    ],
+    "USA & UK Groups": [
+        "https://whtsgroupslinks.com/usa-whatsapp-group-links/",
+        "https://whtsgroupslinks.com/uk-whatsapp-group-links/"
+    ],
+    "Funny & Entertainment": [
+        "https://whtsgroupslinks.com/funny-whatsapp-group-links/",
+        "https://whtsgroupslinks.com/movies-whatsapp-group-links/"
+    ],
+    "Girls & Friendship": [
+        "https://whtsgroupslinks.com/girls-whatsapp-group-links/"
+    ]
 }
 
 OUTPUT_FILE = "_data/whatsapp_links.csv"
@@ -25,111 +38,101 @@ def validate_whatsapp_link(link):
     Returns: (is_active, real_group_name)
     """
     try:
-        # We allow redirects because valid links often redirect slightly
         response = requests.get(link, headers=HEADERS, timeout=10)
         
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
-            
-            # 1. Check for specific error messages indicating a dead link
             page_text = soup.get_text().lower()
+            
+            # Check for dead link indicators
             if "revoked" in page_text or "doesn't exist" in page_text or "reset" in page_text:
                 return False, None
             
-            # 2. Extract Real Group Name from Meta Tags (Most Reliable)
-            # Valid groups usually have the name in the 'og:title' tag
+            # Extract Real Group Name
             meta_title = soup.find("meta", property="og:title")
-            
             if meta_title:
                 group_name = meta_title.get("content")
-                
-                # Filter out generic titles that appear when data is hidden/loading
                 if group_name and "WhatsApp Group Invite" not in group_name and "WhatsApp" != group_name:
                     return True, group_name
-                
-                # If the name is generic but the link didn't fail, it's likely active but private
-                # We return True but mark name as "Unknown Active Group"
                 return True, "Active WhatsApp Group"
             
-            # Fallback: specific h3 classes often hold the title
             h3_title = soup.find("h3")
             if h3_title:
                 return True, h3_title.get_text(strip=True)
 
-    except Exception as e:
-        print(f"    ! Validation Error: {e}")
+    except Exception:
         return False, None
 
     return False, None
 
-def extract_links_from_page(html, category):
+def extract_links_from_page(html):
     soup = BeautifulSoup(html, 'html.parser')
     candidates = []
-
-    # Find all WhatsApp Links
     for a_tag in soup.find_all('a', href=True):
         href = a_tag['href']
         if "chat.whatsapp.com" in href:
             clean_link_match = re.search(r'https:\/\/chat\.whatsapp\.com\/[A-Za-z0-9]{20,}', href)
             if clean_link_match:
                 candidates.append(clean_link_match.group(0))
-    
-    return list(set(candidates)) # Return unique links only
+    return list(set(candidates))
 
 def main():
-    print("--- STARTING VALIDATED SCRAPE ---")
+    print("--- STARTING MULTI-SOURCE SCRAPE ---")
     valid_data = []
 
-    for category, url in TARGETS.items():
-        print(f"Scraping Source: {category}...")
-        try:
-            response = requests.get(url, headers=HEADERS, timeout=15)
-            if response.status_code == 200:
-                # 1. Get all potential links from the site
-                potential_links = extract_links_from_page(response.text, category)
-                print(f"  -> Found {len(potential_links)} potential links. Validating now...")
-                
-                # 2. Validate each link (Check if Active)
-                for i, link in enumerate(potential_links):
-                    print(f"    [{i+1}/{len(potential_links)}] Checking: {link}", end="\r")
+    # Loop through each Category
+    for category, urls_list in TARGETS.items():
+        print(f"\nProcessing Category: {category}...")
+        
+        # Loop through each URL in that Category
+        for url in urls_list:
+            print(f"  Scraping URL: {url}...")
+            try:
+                response = requests.get(url, headers=HEADERS, timeout=15)
+                if response.status_code == 200:
+                    potential_links = extract_links_from_page(response.text)
+                    print(f"    Found {len(potential_links)} potential links. Validating...")
                     
-                    is_active, real_name = validate_whatsapp_link(link)
-                    
-                    if is_active:
-                        valid_data.append({
-                            "category": category,
-                            "group_name": real_name, # The REAL name from WhatsApp
-                            "whatsapp_link": link,
-                            "status": "Active"       # New Field
-                        })
-                        # Sleep to avoid WhatsApp blocking our IP
-                        time.sleep(1.5) 
-                print("") # New line after loop
-            else:
-                print(f"  !! Failed to load source (Status: {response.status_code})")
-        except Exception as e:
-            print(f"  !! Error: {e}")
+                    for i, link in enumerate(potential_links):
+                        # Validate Link
+                        is_active, real_name = validate_whatsapp_link(link)
+                        
+                        if is_active:
+                            valid_data.append({
+                                "category": category, # Assigns the main category name
+                                "group_name": real_name,
+                                "whatsapp_link": link,
+                                "status": "Active"
+                            })
+                            print(f"      [OK] {real_name}")
+                        else:
+                            print(f"      [X] Dead Link", end="\r")
+                            
+                        # Important: Sleep to prevent blocking
+                        time.sleep(1.5)
+                else:
+                    print(f"    !! Failed to load (Status: {response.status_code})")
+            except Exception as e:
+                print(f"    !! Error scraping {url}: {e}")
+            
+            # Sleep between different URL pages
+            time.sleep(2)
 
     # SAVE LOGIC
     if valid_data:
         os.makedirs('_data', exist_ok=True)
         new_df = pd.DataFrame(valid_data)
         
-        # Load existing
         if os.path.exists(OUTPUT_FILE):
             try:
                 old_df = pd.read_csv(OUTPUT_FILE)
-                # We prioritize the NEW data (fresh validation)
                 final_df = pd.concat([new_df, old_df])
             except:
                 final_df = new_df
         else:
             final_df = new_df
 
-        # Remove duplicates based on Link
         final_df = final_df.drop_duplicates(subset=['whatsapp_link'])
-        
-        # Save
         final_df.to_csv(OUTPUT_FILE, index=False)
         print(f"\nSUCCESS: Saved {len(final_df)} ACTIVE links to {OUTPUT_FILE}")
     else:

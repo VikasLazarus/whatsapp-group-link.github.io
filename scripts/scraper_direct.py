@@ -16,7 +16,33 @@ TARGETS = {
         "https://whtsgroupslinks.com/usa-whatsapp-group-links/"
     ],
     "General Mix": [
-        "https://whtsgroupslinks.com/active-whatsapp-group-links/"
+        "https://whtsgroupslinks.com/active-whatsapp-group-links/",
+        
+       "https://whtsgroupslinks.com/",
+       "https://whatsupgrouplink.com/",
+       "https://www.wa-contact-extractor.com/post/active-whatsapp-group-links[citation:3]",
+       "https://wgrouplinks.com/",
+       "https://indiansinlondonuk.com/whatsapp-groups/",
+       "https://topwhatsappgrouplinks.wordpress.com/",
+       "https://sites.google.com/view/whatsapp-group-link-join-only",
+       "https://about.me/whatsapp_grouplinks",
+       "https://www.prmoment.in/pr-insight/your-guide-to-pr-focused-whatsapp-channels-in-india",
+       "https://wagroupjoin.com/",
+       "https://grouplinks.org/",
+       "https://wgroupjoin.com/",
+       "https://web.whatsapp.com/",
+       "https://groups.whatsapp.com/",
+       "https://grouplinkz.com/",
+       "https://whatsappgroup4u.com/",
+       "https://grouplinku.com/",
+       "https://webgruplink.com/",
+       "https://webwagrouplinks.com/",
+       "https://wagroupinvite.com/",
+       "https://joingroups.in/",
+       "https://joinwhatsappgrouplinks.com/",
+       "https://webwagroupinvites.com/",
+       "https://groupsor.link/"
+  
     ]
 }
 

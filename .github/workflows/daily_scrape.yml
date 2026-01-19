@@ -1,60 +1,56 @@
-import os
+name: Filter WhatsApp Groups
 
-def create_github_action_yaml():
-    yaml_content = """name: Filter WhatsApp Groups
-
+# Controls when the workflow will run
 on:
+  # Triggers the workflow every day at midnight UTC
   schedule:
-    # Runs at 00:00 UTC every day
     - cron: '0 0 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
-  filter-and-update:
+  filter-csv:
     runs-on: ubuntu-latest
     
+    # Grants permission to write changes back to the repository
     permissions:
       contents: write
 
     steps:
+      # Step 1: Check out the repository code
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Step 2: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
+      # Step 3: Install dependencies (if any exist in requirements.txt)
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # If you don't have external dependencies, this step does nothing but is good practice.
 
+      # Step 4: Run your Python filtering script
+      # Make sure your python file is named 'filter_groups.py' in the root of your repo
       - name: Run Filter Script
         run: python filter_groups.py
-        # Ensure your python script is named 'filter_groups.py' in the root of the repo
 
+      # Step 5: Commit and Push changes if the CSV was updated
       - name: Commit and Push changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           
-          # Check if there are changes to the output file
-          if [[ -n $(git status -s) ]]; then
-            git add filtered_groups.csv
+          # Add the output file (ensure this matches the output filename in your python script)
+          git add filtered_groups.csv
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
             git commit -m "Auto-filter: Removed 'Features' groups"
             git push
-          else
-            echo "No changes to commit."
           fi
-"""
-
-    filename = "filter_workflow.yml"
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(yaml_content)
-    
-    print(f"Successfully created '{filename}'")
-    print("Move this file to '.github/workflows/' in your repository.")
-
-if __name__ == "__main__":
-    create_github_action_yaml()

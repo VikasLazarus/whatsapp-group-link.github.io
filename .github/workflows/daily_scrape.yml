@@ -1,46 +1,60 @@
-name: Daily Direct Scraper
+import os
+
+def create_github_action_yaml():
+    yaml_content = """name: Filter WhatsApp Groups
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs automatically at Midnight UTC
-  workflow_dispatch:      # Allows you to click "Run workflow" manually
-
-permissions:
-  contents: write
+    # Runs at 00:00 UTC every day
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 jobs:
-  scrape-and-publish:
+  filter-and-update:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
 
     steps:
-      # 1. Check out your repository
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      # 3. Install ALL required libraries (Fixed line below)
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
-          pip install requests pandas beautifulsoup4 google-generativeai
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # If you don't have external dependencies, this step does nothing but is good practice.
 
-      # 4. Run the AI-Powered Scraper
-      - name: Run Scraper
-        env:
-          # This connects your GitHub Secret to the script
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/scraper_direct.py
+      - name: Run Filter Script
+        run: python filter_groups.py
+        # Ensure your python script is named 'filter_groups.py' in the root of the repo
 
-      # 5. Save the data back to your repo
-      - name: Commit Data
+      - name: Commit and Push changes
         run: |
-          git config --global user.name "LinkBot"
-          git config --global user.email "bot@noreply.github.com"
-          git add _data/whatsapp_links.csv
-          # The '|| echo' prevents error if no new links were found today
-          git commit -m "Auto-update: Fresh links added [skip ci]" || echo "No changes to commit"
-          git push
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          
+          # Check if there are changes to the output file
+          if [[ -n $(git status -s) ]]; then
+            git add filtered_groups.csv
+            git commit -m "Auto-filter: Removed 'Features' groups"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+"""
+
+    filename = "filter_workflow.yml"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(yaml_content)
+    
+    print(f"Successfully created '{filename}'")
+    print("Move this file to '.github/workflows/' in your repository.")
+
+if __name__ == "__main__":
+    create_github_action_yaml()

@@ -1,4 +1,2 @@
-requests
-pandas
-beautifulsoup4
-google-generativeai
+# No external dependencies required
+# The script uses only Python standard libraries (csv, os)

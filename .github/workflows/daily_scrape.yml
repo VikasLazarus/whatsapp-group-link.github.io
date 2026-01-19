@@ -1,5 +1,8 @@
 name: Daily Direct Scraper
-
+env:
+          # This passes the secret from GitHub to the Python script
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/scraper_direct.py
 on:
   schedule:
     - cron: '0 0 * * *' # Midnight UTC

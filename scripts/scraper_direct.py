@@ -19,7 +19,7 @@ else:
 
 # The list of categories Gemini MUST choose from
 VALID_CATEGORIES = [
-    "Cricket & Sports","Indian","Pakistani", "Gaming & Esports", "Jobs & Careers", "Crypto & Money",
+    "Cricket & Sports", "Gaming & Esports", "Jobs & Careers", "Crypto & Money",
     "Movies & Web Series", "Funny, Memes & Viral", "Shayari & Love", 
     "Girls & Friendship", "Education & Students", "Tech, AI & Coding",
     "Kerala & Malayalam", "Tamil & Telugu", "North India (Hindi/Punjabi)",
@@ -43,7 +43,7 @@ HEADERS = {
 BLOCKED_NAMES = ["Active WhatsApp Group", "WhatsApp Group Invite", "WhatsApp Group", "WhatsApp", "Group Invite"]
 
 # ==========================================
-# 2. AI CLASSIFICATION FUNCTION
+# 2. AI CLASSIFICATION FUNCTION (FIXED)
 # ==========================================
 def ask_gemini_category(group_name, fallback_category):
     """
@@ -53,8 +53,8 @@ def ask_gemini_category(group_name, fallback_category):
         return fallback_category
 
     try:
-        # We use 'gemini-1.5-flash' because it is fast and free
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        # FIX: Switched to 'gemini-pro' which is the most stable model ID
+        model = genai.GenerativeModel('gemini-pro')
         
         prompt = (
             f"Classify the WhatsApp group named '{group_name}' into exactly one of these categories: "
@@ -122,7 +122,7 @@ def extract_links_from_page(html):
     return list(set(candidates))
 
 def main():
-    print("--- STARTING PURE AI SCRAPE ---")
+    print("--- STARTING PURE AI SCRAPE (GEMINI PRO) ---")
     valid_data = []
 
     for source_cat, urls_list in TARGETS.items():
@@ -152,7 +152,7 @@ def main():
                             })
                             print(f"      [AI] {real_name} -> {final_category}")
                             
-                            # Sleep 4s is crucial for Free Tier (Rate Limit is 15 requests/min)
+                            # Sleep 4s to stay within Gemini Pro free limits
                             time.sleep(4) 
                         
             except Exception as e:

@@ -76,7 +76,7 @@ h1: "Explore All Unlimited Active WhatsApp Groups"
   <div id="groupsContainer">
     
     {% comment %} Step A: Group the CSV data by the 'category' column {% endcomment %}
-    {% assign grouped_links = site.data.main_whatsapp_links | group_by: "category" %}
+    {% assign grouped_links = site.data.whatsapp_links | group_by: "category" %}
 
     {% comment %} Step B: Loop through each Category {% endcomment %}
     {% for category in grouped_links %}

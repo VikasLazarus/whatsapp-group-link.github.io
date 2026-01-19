@@ -1,12 +1,9 @@
 name: Daily Direct Scraper
-env:
-          # This passes the secret from GitHub to the Python script
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/scraper_direct.py
+
 on:
   schedule:
-    - cron: '0 0 * * *' # Midnight UTC
-  workflow_dispatch:      # Manual trigger
+    - cron: '0 0 * * *' # Runs automatically at Midnight UTC
+  workflow_dispatch:      # Allows you to click "Run workflow" manually
 
 permissions:
   contents: write
@@ -16,24 +13,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Check out your repository
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
+      # 3. Install ALL required libraries (Fixed line below)
       - name: Install Dependencies
-        run: pip install requests pandas beautifulsoup4
+        run: |
+          pip install requests pandas beautifulsoup4 google-generativeai
 
+      # 4. Run the AI-Powered Scraper
       - name: Run Scraper
+        env:
+          # This connects your GitHub Secret to the script
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/scraper_direct.py
 
+      # 5. Save the data back to your repo
       - name: Commit Data
         run: |
           git config --global user.name "LinkBot"
           git config --global user.email "bot@noreply.github.com"
           git add _data/whatsapp_links.csv
-          git commit -m "Auto-update: Fresh links added" || echo "No changes to commit"
+          # The '|| echo' prevents error if no new links were found today
+          git commit -m "Auto-update: Fresh links added [skip ci]" || echo "No changes to commit"
           git push

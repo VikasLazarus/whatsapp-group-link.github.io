@@ -1,56 +1,41 @@
-name: Filter WhatsApp Groups
+name: Daily Direct Scraper
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow every day at midnight UTC
   schedule:
-    - cron: '0 0 * * *'
-  
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Runs at Midnight UTC
+  workflow_dispatch:      # Allows manual trigger
+
+permissions:
+  contents: write
 
 jobs:
-  filter-csv:
+  scrape-and-publish:
     runs-on: ubuntu-latest
-    
-    # Grants permission to write changes back to the repository
-    permissions:
-      contents: write
 
     steps:
-      # Step 1: Check out the repository code
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-      # Step 2: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      # Step 3: Install dependencies (if any exist in requirements.txt)
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -r scripts/requirements.txt
 
-      # Step 4: Run your Python filtering script
-      # Make sure your python file is named 'filter_groups.py' in the root of your repo
-      - name: Run Filter Script
-        run: python scripts/filter_groups.py
+      - name: Run Scraper
+        env:
+          # Passes your GitHub Secret to the script
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/scraper_direct.py
 
-      # Step 5: Commit and Push changes if the CSV was updated
-      - name: Commit and Push changes
+      - name: Commit Data
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          
-          # Add the output file (ensure this matches the output filename in your python script)
-          git add filtered_groups.csv
-          
-          # Check if there are changes to commit
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Auto-filter: Removed 'Features' groups"
-            git push
-          fi
+          git config --global user.name "LinkBot"
+          git config --global user.email "bot@noreply.github.com"
+          git add _data/whatsapp_links.csv
+          # 'skip ci' prevents this commit from triggering other actions
+          git commit -m "Auto-update: Fresh links added [skip ci]" || echo "No changes to commit"
+          git push

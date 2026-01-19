@@ -36,7 +36,7 @@ jobs:
       # Step 4: Run your Python filtering script
       # Make sure your python file is named 'filter_groups.py' in the root of your repo
       - name: Run Filter Script
-        run: python filter_groups.py
+        run: python scripts/filter_groups.py
 
       # Step 5: Commit and Push changes if the CSV was updated
       - name: Commit and Push changes

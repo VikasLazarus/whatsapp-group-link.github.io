@@ -10,14 +10,14 @@ import google.generativeai as genai
 # 1. SETUP AI & CONFIGURATION
 # ==========================================
 
-# Configure Gemini AI
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY")
+ACTIVE_MODEL_NAME = None # Will be auto-detected
+
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
 else:
     print("WARNING: GEMINI_API_KEY not found. AI features will be disabled.")
 
-# The list of categories Gemini MUST choose from
 VALID_CATEGORIES = [
     "Cricket & Sports", "Gaming & Esports", "Jobs & Careers", "Crypto & Money",
     "Movies & Web Series", "Funny, Memes & Viral", "Shayari & Love", 
@@ -27,7 +27,6 @@ VALID_CATEGORIES = [
     "International (USA/UK)"
 ]
 
-# Source URLs to scrape
 TARGETS = {
     "General Mix": ["https://whtsgroupslinks.com/active-whatsapp-group-links/"],
     "Indian Mix": ["https://whtsgroupslinks.com/indian-whatsapp-group-links/"],
@@ -43,18 +42,40 @@ HEADERS = {
 BLOCKED_NAMES = ["Active WhatsApp Group", "WhatsApp Group Invite", "WhatsApp Group", "WhatsApp", "Group Invite"]
 
 # ==========================================
-# 2. AI CLASSIFICATION FUNCTION (FIXED)
+# 2. AUTO-DETECT MODEL FUNCTION
+# ==========================================
+def get_working_model():
+    """
+    Automatically finds a valid model to avoid 404 errors.
+    """
+    global ACTIVE_MODEL_NAME
+    if ACTIVE_MODEL_NAME: return ACTIVE_MODEL_NAME
+    
+    print("  ...Auto-detecting available AI models...")
+    try:
+        for m in genai.list_models():
+            if 'generateContent' in m.supported_generation_methods:
+                if 'gemini' in m.name:
+                    ACTIVE_MODEL_NAME = m.name
+                    print(f"  -> Selected Model: {ACTIVE_MODEL_NAME}")
+                    return ACTIVE_MODEL_NAME
+    except Exception as e:
+        print(f"  !! Model detection failed: {e}")
+    
+    return None
+
+# ==========================================
+# 3. AI CLASSIFICATION
 # ==========================================
 def ask_gemini_category(group_name, fallback_category):
-    """
-    Sends the group name to Gemini and asks for a classification.
-    """
-    if not GEMINI_KEY:
-        return fallback_category
+    if not GEMINI_KEY: return fallback_category
+
+    # Ensure we have a model name
+    model_name = get_working_model()
+    if not model_name: return fallback_category
 
     try:
-        # FIX: Switched to 'gemini-pro' which is the most stable model ID
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel(model_name)
         
         prompt = (
             f"Classify the WhatsApp group named '{group_name}' into exactly one of these categories: "
@@ -66,26 +87,19 @@ def ask_gemini_category(group_name, fallback_category):
         response = model.generate_content(prompt)
         ai_decision = response.text.strip()
         
-        # Validation: Ensure AI returned a real category we know
         if ai_decision in VALID_CATEGORIES:
             return ai_decision
         
-        # If AI returns the fallback or something weird, return fallback
         return fallback_category
 
     except Exception as e:
         print(f"      [AI Error] {e}")
-        # If AI fails, use fallback so we don't lose the group
         return fallback_category
 
 # ==========================================
-# 3. SCRAPING & VALIDATION LOGIC
+# 4. SCRAPING LOGIC
 # ==========================================
-
 def validate_whatsapp_link(link):
-    """
-    Visits the link to check if active and get Real Name.
-    """
     try:
         response = requests.get(link, headers=HEADERS, timeout=10)
         if response.status_code == 200:
@@ -122,7 +136,11 @@ def extract_links_from_page(html):
     return list(set(candidates))
 
 def main():
-    print("--- STARTING PURE AI SCRAPE (GEMINI PRO) ---")
+    print("--- STARTING AUTO-DETECT AI SCRAPE ---")
+    
+    # Initialize Model First
+    if GEMINI_KEY: get_working_model()
+    
     valid_data = []
 
     for source_cat, urls_list in TARGETS.items():
@@ -135,13 +153,10 @@ def main():
                     print(f"  Found {len(potential_links)} candidates. Validating...")
                     
                     for link in potential_links:
-                        # 1. Check if link is alive
                         is_active, real_name = validate_whatsapp_link(link)
                         
                         if is_active:
                             print(f"    Analyzing: {real_name}...", end="\r")
-                            
-                            # 2. ASK GEMINI FOR CATEGORY
                             final_category = ask_gemini_category(real_name, source_cat)
                             
                             valid_data.append({
@@ -151,15 +166,12 @@ def main():
                                 "status": "Active"
                             })
                             print(f"      [AI] {real_name} -> {final_category}")
-                            
-                            # Sleep 4s to stay within Gemini Pro free limits
                             time.sleep(4) 
                         
             except Exception as e:
                 print(f"    Error: {e}")
             time.sleep(2)
 
-    # SAVE LOGIC
     if valid_data:
         os.makedirs('_data', exist_ok=True)
         new_df = pd.DataFrame(valid_data)

@@ -2,14 +2,14 @@ name: Daily Direct Scraper
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs at Midnight UTC
-  workflow_dispatch:      # Allows manual trigger
+    - cron: '0 0 * * *' # Runs every day at Midnight UTC
+  workflow_dispatch:      # Allows you to run it manually for testing
 
 permissions:
   contents: write
 
 jobs:
-  scrape-and-publish:
+  scrape-and-save:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,17 +25,13 @@ jobs:
         run: |
           pip install -r scripts/requirements.txt
 
-      - name: Run Scraper
-        env:
-          # Passes your GitHub Secret to the script
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Run Scraper Script
         run: python scripts/scraper_direct.py
 
-      - name: Commit Data
+      - name: Commit and Push Data
         run: |
           git config --global user.name "LinkBot"
           git config --global user.email "bot@noreply.github.com"
           git add _data/whatsapp_links.csv
-          # 'skip ci' prevents this commit from triggering other actions
-          git commit -m "Auto-update: Fresh links added [skip ci]" || echo "No changes to commit"
+          git commit -m "Auto-update: Found new links" || echo "No changes to commit"
           git push

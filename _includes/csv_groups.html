@@ -33,7 +33,7 @@
 
 <div class="group-table-container">
   {% assign target_cat = include.category | default: page.csv_category %}
-  {% assign groups = site.data.whatsapp_links | where: "category", target_cat %}
+  {% assign groups = site.data.main_whatsapp_links | where: "category", target_cat %}
 
   {% if groups.size > 0 %}
     <table class="w3-table w3-striped w3-bordered">

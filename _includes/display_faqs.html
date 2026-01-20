@@ -3,7 +3,7 @@
   <h2>Frequently Asked Questions</h2>
   <div class="faq-container">
     {% for item in page.faqs %}
-      <details class="faq-item" style="margin-bottom: 15px;">
+      <details class="faq-item w3-padding w3-round-xlarge w3-border w3-border-light-gray" style="margin-bottom: 15px;">
         <summary style="font-weight: bold; cursor: pointer;">{{ item.question }}</summary>
         <div class="faq-answer" style="margin-top: 10px; color: #555;">
           {{ item.answer | markdownify }}

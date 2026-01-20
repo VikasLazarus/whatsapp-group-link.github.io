@@ -61,7 +61,14 @@ h6 {
 
   <div class="w3-content">
   <h1 class="w3-margin w3-xxlarge w3-text-white">{{ page.h1 }}</h1>
-  <span>Page last updated:<br> {{ page.last_modified_at }}</span>
+ <span class="post-meta">
+  Published: {{ page.date | date: "%B %d, %Y" }}
+
+  {% if page.last_modified_at and page.last_modified_at != page.date %}
+    <br>
+    <em>Updated: {{ page.last_modified_at | date: "%B %d, %Y" }}</em>
+  {% endif %}
+ </span>
 </div>
 </header>
 

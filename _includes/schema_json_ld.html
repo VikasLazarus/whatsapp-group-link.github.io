@@ -4,7 +4,7 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ site.url }}{{ page.url }}"
+    "@id": "{{ page.url | absolute_url }}"
   },
   "headline": "{{ page.title | escape }}",
   "image": "{{ site.url }}assets/images/whatsapp-thumbnail.jpg",
